@@ -53,8 +53,8 @@ Teller& Teller::operator=(const Teller &T)
 
 Teller::~Teller()
 {
-	delete T;
-	delete TellerServingStatus;
+	T = NULL;
+	TellerServingStatus = NULL;
 }
 
 int Teller::DepartureofAnElement(int ID)

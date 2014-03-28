@@ -75,11 +75,11 @@ public:
 					input >> ID;
 					int X = E.T->DepartureofAnElement(ID);
 				}
+				E.DT = DT;
 			}
-			E.DT = DT;
+			else
+				cout << "Wrong Input!" << endl;
 		}
-		else
-			cout << "Wrong Input!" << endl;
 		E.T->Print();
 		return input;
 	}
