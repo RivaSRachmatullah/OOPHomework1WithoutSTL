@@ -19,6 +19,9 @@ using namespace std;
 
 class Time
 {
+private:
+	int HourElement, MinuteElement, SecondElement;
+
 public:
 	/**
 	 * @brief Initializes a new instance of Time.
@@ -154,9 +157,6 @@ public:
 	 * @param[in] SecondElement The new second element of time.
 	 */
 	void SetSecondElement(int SecondElement);
-	
-private:
-	int HourElement, MinuteElement, SecondElement;
 };
 
 #endif

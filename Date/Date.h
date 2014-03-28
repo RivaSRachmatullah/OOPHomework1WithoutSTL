@@ -18,6 +18,9 @@ using namespace std;
 
 class Date
 {
+private:
+	int DayComponent, MonthComponent, YearComponent;
+
 public:
 	/**
 	 * @brief Initializes a new instance of the Date class.
@@ -163,9 +166,6 @@ public:
 	 * @param[in] YearComponent The new year component of date.
 	 */
 	void SetYearofDate(int YearComponent);
-	
-private:
-	int DayComponent, MonthComponent, YearComponent;
 };
 
 #endif

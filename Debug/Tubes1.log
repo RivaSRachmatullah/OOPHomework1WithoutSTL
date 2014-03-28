@@ -1,23 +1,9 @@
-﻿Build started 3/28/2014 22:16:49.
+﻿Build started 3/29/2014 2:13:02.
      1>Project "D:\Perkuliahan\Mata Kuliah\Semester 4\IF2210 - Pemrograman Berorientasi Objek\Tubes1\Tubes1.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Event\Event.cpp Queue\Queue.cpp main.cpp
-         main.cpp
-     1>d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\event\event.h(26): error C2039: 'SearchThenAdd' : is not a member of 'Teller'
-                 d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\teller\teller.h(22) : see declaration of 'Teller'
-     1>d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\event\event.h(31): error C2039: 'SearchThenDel' : is not a member of 'Teller'
-                 d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\teller\teller.h(22) : see declaration of 'Teller'
-         Queue.cpp
-         Event.cpp
-     1>d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\event\event.h(26): error C2039: 'SearchThenAdd' : is not a member of 'Teller'
-                 d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\teller\teller.h(22) : see declaration of 'Teller'
-     1>d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\event\event.h(31): error C2039: 'SearchThenDel' : is not a member of 'Teller'
-                 d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\teller\teller.h(22) : see declaration of 'Teller'
-     1>d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\event\event.cpp(31): error C2039: 'EndDel' : is not a member of 'Teller'
-                 d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\teller\teller.h(22) : see declaration of 'Teller'
-         Generating Code...
-     1>Done Building Project "D:\Perkuliahan\Mata Kuliah\Semester 4\IF2210 - Pemrograman Berorientasi Objek\Tubes1\Tubes1.vcxproj" (Build target(s)) -- FAILED.
+     1>Link:
+         Tubes1.vcxproj -> D:\Perkuliahan\Mata Kuliah\Semester 4\IF2210 - Pemrograman Berorientasi Objek\Tubes1\Debug\Tubes1.exe
+     1>Done Building Project "D:\Perkuliahan\Mata Kuliah\Semester 4\IF2210 - Pemrograman Berorientasi Objek\Tubes1\Tubes1.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.66
+Time Elapsed 00:00:00.11

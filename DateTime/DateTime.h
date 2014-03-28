@@ -24,6 +24,10 @@ using namespace std;
 
 class DateTime
 {
+private:
+	Date DateComponent;
+	Time TimeComponent;
+
 public:
 	/**
 	 * @relates Date
@@ -89,15 +93,14 @@ public:
 		char dummy;
 		do
 		{
-			input >> Day >> dummy >> Minute >> dummy >> Year >> dummy
-				>> Hour >> dummy >> Month >> dummy >> Second;
-			if (!Date::IsComponentofDateValid(Day, Minute, Year) ||
+			input >> Day >> dummy >> Month >> dummy >> Year >> dummy >> Hour >> dummy >> Minute >> dummy >> Second;
+			if (!Date::IsComponentofDateValid(Day, Month, Year) ||
 				!Time::IsElementofTimeValid(Hour, Minute, Second))
-				cout << "Wrong input!" << endl;
+				cout << "Wrong Date input!" << endl;
 		} while (!Date::IsComponentofDateValid(Day, Month, Year) ||
 			!Time::IsElementofTimeValid(Hour, Minute, Second));
 		DT.DateComponent.SetDayofDate(Day);
-		DT.DateComponent.SetMonthofDate(Minute);
+		DT.DateComponent.SetMonthofDate(Month);
 		DT.DateComponent.SetYearofDate(Year);
 		DT.TimeComponent.SetHourElement(Hour);
 		DT.TimeComponent.SetMinuteElement(Minute);
@@ -141,10 +144,6 @@ public:
 	 * @param[in] Time The new Time of DateTime.
 	 */
 	void SetTime(Time Time);
-	
-private:
-	Date DateComponent;
-	Time TimeComponent;
 };
 
 #endif // DATE_H

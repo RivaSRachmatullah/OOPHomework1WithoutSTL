@@ -21,6 +21,12 @@ using namespace std;
 
 class Event
 {
+private:
+	static int ID;
+	DateTime DT, Deadline;
+	char code;
+	Teller *T;
+
 public:
 	/**
 	 * @relates Queue
@@ -93,7 +99,7 @@ public:
 	/**
 	 * @brief Set Deadline on Event.
 	 * 
-	 * @param Deadline The DateTime for a Deadline of Event.
+	 * @param[in] Deadline The DateTime for a Deadline of Event.
 	 */
 	void SetDeadline(DateTime Deadline);
 
@@ -102,12 +108,6 @@ public:
 	 * @details Each of teller will delete an element and print it.
 	 */
 	void Close();
-	
-private:
-	static int ID;
-	DateTime DT, Deadline;
-	char code;
-	Teller *T;
 };
 
 #endif

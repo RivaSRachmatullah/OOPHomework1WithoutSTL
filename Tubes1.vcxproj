@@ -10,6 +10,23 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DateTime\DateTime.h" />
+    <ClInclude Include="Date\Date.h" />
+    <ClInclude Include="Event\Event.h" />
+    <ClInclude Include="Queue\Queue.h" />
+    <ClInclude Include="Teller\Teller.h" />
+    <ClInclude Include="Time\Time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DateTime\DateTime.cpp" />
+    <ClCompile Include="Date\Date.cpp" />
+    <ClCompile Include="Event\Event.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Queue\Queue.cpp" />
+    <ClCompile Include="Teller\Teller.cpp" />
+    <ClCompile Include="Time\Time.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A1E27913-E6CF-4535-A97A-99470E191FEA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -75,23 +92,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="DateTime\DateTime.cpp" />
-    <ClCompile Include="Date\Date.cpp" />
-    <ClCompile Include="Event\Event.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Queue\Queue.cpp" />
-    <ClCompile Include="Teller\Teller.cpp" />
-    <ClCompile Include="Time\Time.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="DateTime\DateTime.h" />
-    <ClInclude Include="Date\Date.h" />
-    <ClInclude Include="Event\Event.h" />
-    <ClInclude Include="Queue\Queue.h" />
-    <ClInclude Include="Teller\Teller.h" />
-    <ClInclude Include="Time\Time.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

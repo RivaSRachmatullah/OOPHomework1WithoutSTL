@@ -19,6 +19,9 @@ using namespace std;
 
 class Queue
 {
+private:
+	int *Q, Head, Tail, CapacityofQueue;
+
 public:
 	/**
 	 * @brief Initializes a new instance of the Queue class with 26 block of memory.
@@ -152,13 +155,9 @@ public:
 	
 	/**
 	 * @brief Delete element on Queue's Tail.
-	 * @exception InvalidOperationException Queue is empty.
 	 * @return Element on Queue's Tail.
 	 */
 	int DeleteforJockeying();
-
-private:
-	int *Q, Head, Tail, CapacityofQueue;
 };
 
 #endif

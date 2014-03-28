@@ -3,19 +3,20 @@
 
 using namespace std;
 
-int main() {
-	DateTime Deadline,DT;
-	int N;
-	cin >> Deadline >> N;
-	Event *E = new Event(N);
-	E->setDeadline(Deadline);
+int main()
+{
+	int NumberofTeller;
+	DateTime Deadline, DT;
+	cin >> Deadline;
+	cin >> NumberofTeller;
+	Event E(NumberofTeller);
+	E.SetDeadline(Deadline);
 	bool stop = false;
 	do {
-		cin >> *E;
-		if (E->getDeadline() < E->getTime() || E->getDeadline() == E->getTime())
+		cin >> E;
+		if (E.GetDeadline() < E.GetDateTime() || E.GetDeadline() == E.GetDateTime())
 			stop = true;
 	} while (!stop);
-	E->Close();
-	system("pause");
+	E.Close();
 	return 0;
 }

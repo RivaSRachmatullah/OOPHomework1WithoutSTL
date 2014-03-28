@@ -20,6 +20,11 @@ using namespace std;
 
 class Teller
 {
+private:
+	int NumberofTeller;
+	bool *TellerServingStatus;
+	Queue *T;
+
 public:
 	/**
 	 * @brief Initializes a new instance of Teller class with 5 block Queue.
@@ -79,20 +84,16 @@ public:
 	 * @details Print will be printed like Qi = {x1,x2,...,xn}
 	 */
 	void Print();
-		
 
 private:
 	/**
-	 * @brief Jockeying function.
-	 * @details Jockeying will happen if origin Queue has element that are more than two elements from others Queue.
-	 * 
-	 * @param[in] iOrigin Queue's Number that will do Jockeying.
-	 * @return -1 if Jockeying isn't happening, Queue's number if Jockeying is happening.
-	 */
+	* @brief Jockeying function.
+	* @details Jockeying will happen if origin Queue has element that are more than two elements from others Queue.
+	*
+	* @param[in] iOrigin Queue's Number that will do Jockeying.
+	* @return -1 if Jockeying isn't happening, Queue's number if Jockeying is happening.
+	*/
 	int Jockeying(int iOrigin);
-	int NumberofTeller;
-	bool *TellerServingStatus;
-	Queue *T;
 };
 
 #endif

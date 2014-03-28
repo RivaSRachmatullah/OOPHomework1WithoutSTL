@@ -1,6 +1,6 @@
 #include "Event.h"
 
-int Event::id = 0;
+int Event::ID = 0;
 
 Event::Event() {
 	T = new Teller();
