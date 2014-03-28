@@ -1,140 +1,162 @@
-/**\class Time
+/**
+ * \class Time
+ * 
+ * @brief Time Class
+ * @details Represent a Time
+ * 
+ * @author Riva Syafri Rachmatullah (13512036) for .h file
+ * @author Indam Muhammad (13512026) and Riva Syafri Rachmatullah (13512036) for .cpp file
  *
- * \brief Class Time
- *
- * Class ini merepresentasikan waktu pada dunia nyata.
- * Berisi atribut jam, menit, dan detik yang bertipe integer dan juga 
- * method berupa prosedur dan fungsi untuk mengelola jam.
- *
- * \note Class ini hanya mengelola waktu dalam bentuk HH:MM:SS
- * tanpa tanggal
- *
- * $Author: Riva Syafri Rachmatullah (.h) <br>Indam Muhammad dan Riva Syafri Rachmatullah (.cpp) $
- *
- * \version 1.0 $Revision: 1.1 $
- *
- * $Date: 2014/03/19 16:53:23 $
- *
- * Contact		:	<br>13512036@std.stei.itb.ac.id
- *					<br>13512026@std.stei.itb.ac.id
- *
- * Created on	: 7 Maret 2014 17:00:00
- *
+ * @version v1.2
+ * 
  */
-
-
 #ifndef TIME_H
 #define TIME_H
 
 #include <iostream>
+
 using namespace std;
 
-class Time {
+class Time
+{
 public:
-	/// Constructor (CTOR)
+	/**
+	 * @brief Initializes a new instance of Time.
+	 */
 	Time();
 
-	/// Copy Constructor (CCTOR)
+	/**
+	 * @brief Initializes a new instance of Time from specified Time instance.
+	 * 
+	 * @param[in] T The object Time that will be copied.
+	 */
 	Time(const Time& T);
-
-	/// Destructor
+	
+	/**
+	 * @brief Clear an instance of Time from memory.
+	 */
 	~Time();
 
-	/// Operator Tulis
-	/** Operator untuk menuliskan variabel T berclass Time ke layar 
-	 *	<br>I.S.	: T terdefinisi
-	 *	<br>F.S.	: Nilai T ditulis ke layar dengan format H:M:S
-	 *	<br>Proses	: Menulis nilai setiap komponen dari variabel T ke layar 
+	/**
+	 * @brief Determines whether the specified object Time is equal to the current object Time.
+	 * 
+	 * @param[in] T The object Time to compare with the current object Time.
+	 * @return true if the specified object Time is equal to the current object Time; otherwise false.
 	 */
-	friend ostream& operator<<(ostream &output, const Time& T) {
-		output << T.H << ":" << T.M << ":" << T.S;
+	bool operator==(const Time &T);
+	
+	/**
+	 * @brief Determines whether the specified object Time is not equal to the current object Time.
+	 * 
+	 * @param[in] T The object Time to compare with the current object Time.
+	 * @return true if the specified object Time is not equal to the current object Time; otherwise false.
+	 */
+	bool operator!=(const Time &T); 
+	
+	/**
+	 * @brief Determines whether the specified object Time is earlier than the current object Time.
+	 * 
+	 * @param[in] T The object Time to compare with the current object Time.
+	 * @return true if the specified object Time is earlier than the current object Time; otherwise false.
+	 */
+	bool operator<(const Time &T);
+
+	/**
+	 * @brief Determines whether the specified object Time is later than the current object Time.
+	 * 
+	 * @param[in] T The object Time to compare with the current object Time.
+	 * @return true if the specified object Time is later than the current object Time; otherwise false.
+	 */
+	bool operator>(const Time &T);
+
+	/**
+	 * @brief Writes the specified Time followed by the current line terminator to the standard output stream.
+	 * 
+	 * @param[in] output An instance of class ostream.
+	 * @param[in] T An instance of class Time.
+	 */
+	friend ostream& operator<<(ostream &output, const Time& T)
+	{
+		output << T.HourElement << ":" << T.MinuteElement << ":" << T.SecondElement;
 		return output;
 	}
 	
-	/// Operator Baca
-	/** Operator untuk membaca input user yang lalu dimasukkan ke dalam suatu
-	 * variabel berclass Time
-	 *	<br>I.S.	: Objek T ada.
-	 *	<br>F.S.	: T berisi TIME yang valid
-	 *	<br>Proses	: Mengulangi membaca komponen H, M, S sehingga membentuk Time T yang valid.
-	 *			Tidak mungkin menghasilkan Time T yang tidak valid. 
+	/**
+	 * @brief Read the specified Time to the standard input stream.
+	 * 
+	 * @param[in] input An instance of class istream.
+	 * @param[out] T An instance of class Time.
 	 */
 	friend istream& operator>>(istream &input, Time& T) {
-		int hour, minute, second;
-		char c;
-		input >> hour >> c >> minute >> c >> second;
-		while (!(IsTimeValid(hour, minute, second))) {
-			cout << "input jam salah" << endl;
-			input >> hour >> c >> minute >> c >> second;
+		int Hour, Minute, Second;
+		char dummy;
+		input >> Hour >> dummy >> Minute >> dummy >> Second;
+		while (!IsElementofTimeValid(Hour, Minute, Second))
+		{
+			cout << "Wrong input!" << endl;
+			input >> Hour >> dummy >> Minute >> dummy >> Second;
 		}
-		T.H = hour;
-		T.M = minute;
-		T.S = second;
+		T.HourElement = Hour;
+		T.MinuteElement = Minute;
+		T.SecondElement = Second;
 		return input;
 	}
 
-	/// Pemeriksa komponen pembuat waktu
-	/** Operasi yang memeriksa apakah 3 komponen yang ada pada parameter 
-	 * dapat membentuk jam pada dunia nyata secara valid atau benar */
-	static bool IsTimeValid (int H, int M, int S);
-	
-	/// Getter Jam
-	int GetHour();
-	
-	/// Getter Menit
-	int GetMinute();
-	
-	/// Getter Detik
-	int GetSecond();
-
-	/// Setter Jam
-	/** Operasi untuk mengubah atribut jam dalam class Time 
-	 * <br>I.S. = H terdefinisi
-	 * <br>Proses = H yang ada di class diubah isinya menjadi H yang ada di parameter
-	 * <br>F.S. = H yang ada di class adalah H yang ada di parameter
+	/**
+	 * @brief Determines if the specified elements of time is a valid time.
+	 * @details Elements of Time will be valid if HourElement is equal and between 0 to 23 with MinuteElement and SecondElement are equal and between 0 to 59.
+	 * 
+	 * @param[in] HourElement The hour element of time.
+	 * @param[in] MinuteElement The minute element of time.
+	 * @param[in] SecondElement The second element of time.
+	 * @return true if all elements of Time is valid.
 	 */
-	void SetHour(int H);
+	static bool IsElementofTimeValid(int HourElement, int MinuteElement, int SecondElement);
 	
-	/// Setter Menit
-	/** Operasi untuk mengubah atribut menit dalam class Time 
-	 * <br>I.S. = M terdefinisi
-	 * <br>Proses = M yang ada di class diubah isinya menjadi M yang ada di parameter
-	 * <br>F.S. = M yang ada di class adalah M yang ada di parameter
+	/**
+	 * @brief Gets the hour element of specified Time.
+	 * @return The hour element of time.
 	 */
-	void SetMinute(int M);
+	int GetHourElement();
 	
-	/// Setter Second
-	/** Operasi untuk mengubah atribut detik dalam class Time 
-	 * <br>I.S. = S terdefinisi
-	 * <br>Proses = S yang ada di class diubah isinya menjadi S yang ada di parameter
-	 * <br>F.S. = S yang ada di class adalah S yang ada di parameter
+	/**
+	 * @brief Gets the minute element of specified Time.
+	 * @return The minute element of time.
 	 */
-	void SetSecond(int S);
-
-	/// Operator ==
-	/** Memeriksa apakah suatu variabel berclass Time sama dengan T.
-	 * Fungsi ini akan mengembalikan true jika sama atau mengembalikan false jika tidak. */
-	bool operator==(const Time &T);
+	int GetMinuteElement();
 	
-	/// Operator !=
-	/** Memeriksa apakah suatu variabel berclass Time tidak sama dengan T.
-	 * Fungsi ini akan mengembalikan true jika tidak sama atau mengembalikan false jika sama. */
-	bool operator!= (const Time &T); 
-	
-	/// Operator <
-	/** Fungsi ini akan mengembalikan true apabila suatu variabel berclass Time adalah waktu yang lebih awal daripada T.
-	 * dan false apabila sebaliknya atau sama dengan T. */
-	bool operator< (const Time &T);
+	/**
+	 * @brief Gets the second element of specified Time.
+	 * @return The second element of time.
+	 */
+	int GetSecondElement();
 
-	/// Operator >
-	/** Fungsi ini akan mengembalikan true apabila suatu variabel berclass Time adalah waktu sesudah T.
-	 * dan false apabila sebaliknya atau sama dengan T. */
-	bool operator> (const Time &T);
+	/**
+	 * @brief Set the hour element of time with specified hour.
+	 * @details Parameter must be a valid HourElement.
+	 * 
+	 * @param[in] HourElement The new hour element of time.
+	 */
+	void SetHourElement(int HourElement);
+	
+	/**
+	 * @brief Set the minute element of time with specified minute.
+	 * @details Parameter must be a valid MinuteElement.
+	 * 
+	 * @param[in] MinuteElement The new minute element of time.
+	 */
+	void SetMinuteElement(int MinuteElement);
+	
+	/**
+	 * @brief Set the second element of time with specified second.
+	 * @details Parameter must be a valid SecondElement.
+	 * 
+	 * @param[in] SecondElement The new second element of time.
+	 */
+	void SetSecondElement(int SecondElement);
 	
 private:
-	int H;
-	int M;
-	int S;
+	int HourElement, MinuteElement, SecondElement;
 };
 
 #endif

@@ -1,159 +1,184 @@
 #include "Queue.h"
 #include <cstdlib>
 
-/* 5 SEKAWAN */
-Queue::Queue() {
-	N = 25;
-	Q = new infotype[25+1];
-	HEAD = 0;
-	TAIL = 0;
+Queue::Queue()
+{
+	CapacityofQueue = 25;
+	Q = new int[CapacityofQueue + 1];
+	Head = 0;
+	Tail = 0;
 }
 
-Queue::Queue(int MaxEl) {
-	if (MaxEl>0) {
-		Q = new infotype[MaxEl+1];
-		N = MaxEl;
-	} else {
-		N = 25;
-		Q = new infotype[25+1];
+Queue::Queue(int MaximumCapacityofQueue)
+{
+	if (MaximumCapacityofQueue > 0)
+	{
+		CapacityofQueue = MaximumCapacityofQueue;
 	}
-	HEAD = 0;
-	TAIL = 0;
+	else
+	{
+		CapacityofQueue = 25;
+	}
+	Q = new int[CapacityofQueue + 1];
+	Head = 0;
+	Tail = 0;
 }
 
-Queue::Queue(const Queue& Q) {
-	N = Q.N;
-	this->Q = new infotype[N+1];
-	HEAD = Q.HEAD;
-	TAIL = Q.TAIL;
-	int i = HEAD;
-	while (i != TAIL) {
+Queue::Queue(const Queue& Q)
+{
+	CapacityofQueue = Q.CapacityofQueue;
+	this->Q = new int[CapacityofQueue + 1];
+	Head = Q.Head;
+	Tail = Q.Tail;
+	int i = Head;
+	while (i != Tail)
+	{
 		this->Q[i] = Q.Q[i];
 		i++;
-		if (i == N+1) {
+		if (i == CapacityofQueue + 1)
+		{
 			i = 1;
 		}
 	}
 }
 
-Queue& Queue::operator=(const Queue& Q) {
-	if (this->Q != NULL) {
+Queue& Queue::operator=(const Queue& Q)
+{
+	if (this->Q != NULL)
+	{
 		delete this->Q;
 	}
-	N = Q.N;
-	this->Q = new infotype[N+1];
-	HEAD = Q.HEAD;
-	TAIL = Q.TAIL;
-	int i = HEAD;
-	while (i != TAIL) {
+	CapacityofQueue = Q.CapacityofQueue;
+	this->Q = new int[CapacityofQueue+1];
+	Head = Q.Head;
+	Tail = Q.Tail;
+	int i = Head;
+	while (i != Tail)
+	{
 		this->Q[i] = Q.Q[i];
 		i++;
-		if (i == N+1) {
+		if (i == CapacityofQueue+1)
+		{
 			i = 1;
 		}
 	}
 	return *this;
 }
 
-Queue::~Queue() {
+Queue::~Queue()
+{
 	delete Q;
 }
 
-/*	SELEKTOR */
-address Queue::Head() {
-	return HEAD;
+int Queue::AddressofHead()
+{
+	return Head;
 }
 
-address Queue::Tail() {
-	return TAIL;
+int Queue::AddressofTail()
+{
+	return Tail;
 }
 
-infotype Queue::InfoHead() {
-	return Q[HEAD];
+int Queue::ContentofHead()
+{
+	return Q[Head];
 }
 
-infotype Queue::InfoTail() {
-	return Q[TAIL];
+int Queue::ContentofTail() {
+	return Q[Tail];
 }
 
-int Queue::MaxEl() {
-	return N;
+int Queue::Size() {
+	return CapacityofQueue;
 }
 
-/*	PREDIKAT */
-bool Queue::IsEmpty () {
-	return (HEAD == 0 && TAIL == 0);
+bool Queue::IsQueueEmpty()
+{
+	return (Head == 0 && Tail == 0);
 }
 
-bool Queue::IsFull () {
-	return Count() == N;
+bool Queue::IsQueueFull ()
+{
+	return Effective() == CapacityofQueue;
 }
 
-int Queue::Count () {
-	/* Kamus */
-	/* Algoritma */
-	if (IsEmpty()) {
-	 	return 0;
-	} else if (TAIL > HEAD) {
-		return TAIL - HEAD + 1;
-	} else if (TAIL < HEAD) {
-		return (N + TAIL) - HEAD + 1;
-	} else {
+int Queue::Effective()
+{
+	if (IsQueueEmpty())
+		return 0;
+	else if (Tail > Head)
+		return Tail - Head + 1;
+	else if (Tail < Head)
+		return (CapacityofQueue + Tail) - Head + 1;
+	else
 		return 1;
-	}
 }
 
-/*	OPERASI DASAR */
-void Queue::Add (infotype X) {
-	if (!IsFull()) {
-		if (IsEmpty()) {
-			HEAD = 1;
-			TAIL = 1;
-			Q[TAIL] = X;
-		} else { 
-			TAIL++;
-			if (TAIL > N) {
-				TAIL = 1;
-				Q[TAIL] = X;
-			} else {
-				Q[TAIL] = X;
+void Queue::Enqueue(int Element)
+{
+	if (!IsQueueFull())
+	{
+		if (IsQueueEmpty())
+		{
+			Head = 1;
+			Tail = 1;
+			Q[Tail] = Element;
+		}
+		else
+		{ 
+			Tail++;
+			if (Tail > CapacityofQueue)
+			{
+				Tail = 1;
+				Q[Tail] = Element;
 			}
+			else
+				Q[Tail] = Element;
 		}	
 	}
 }
 
-infotype Queue::Del () {
-	if (!IsEmpty()) {
-		int X = Q[HEAD];
-		if (Count() == 1) {
-			HEAD = 0;
-			TAIL = 0;
-		} else {
-			HEAD++;
-			if (HEAD > N) {
-				HEAD = 1;
-			}
+int Queue::Dequeue()
+{
+	if (!IsQueueEmpty())
+	{
+		int Element = Q[Head];
+		if (Effective() == 1)
+		{
+			Head = 0;
+			Tail = 0;
 		}
-		return X;
-	} else {
-		return 0;
+		else
+		{
+			Head++;
+			if (Head > CapacityofQueue)
+				Head = 1;
+		}
+		return Element;
 	}
+	else
+		return 0;
 }
 
-infotype Queue::DelJockey() {
-	if (!IsEmpty()) {
-		int X = Q[TAIL];
-		if (Count() == 1) {
-			HEAD = 0;
-			TAIL = 0;
-		} else {
-			TAIL--;
-			if (TAIL == 0) {
-				TAIL = N;
-			}
+int Queue::DeleteforJockeying()
+{
+	if (!IsQueueEmpty())
+	{
+		int X = Q[Tail];
+		if (Effective() == 1)
+		{
+			Head = 0;
+			Tail = 0;
+		}
+		else
+		{
+			Tail--;
+			if (Tail == 0)
+				Tail = CapacityofQueue;
 		}
 		return X;
-	} else {
-		return 0;
 	}
+	else
+		return 0;
 }

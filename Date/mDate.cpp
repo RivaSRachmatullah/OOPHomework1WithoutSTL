@@ -3,75 +3,86 @@
 
 using namespace std;
 
-void mainmenu();
+void Menu();
 
 /* PROGRAM UTAMA */
-int main () {
+int main()
+{
 	Date D1, D2;
-	int pilihan;
 	cin >> D1 >> D2;
+	int option;
 	do {
-		cout << endl << "D1 : " << D1 << endl;
-		cout << "D2 : " << D2 << endl;
-		mainmenu();
+		cout << "D1 : " << D1 << endl << "D2 : " << D2 << endl;
+		Menu();
 		cout << "Pilihan anda : ";
-		cin >> pilihan;
-		switch (pilihan) {
-			case 1	:	int D,M,Y;
-						do {
-							cout << "Masukkan hari yang diinginkan : ";
-							cin >> D;
-							cout << "Masukkan bulan yang diinginkan : ";
-							cin >> M;
-							cout << "Masukkan tahun yang diinginkan : ";
-							cin >> Y;
-						} while (!Date::IsTanggalValid(D,M,Y));
-						D1.SetDay(D);
-						D1.SetMonth(M);
-						D1.SetYear(Y);
-						break;
-			case 2	:	do {
-							cout << "Masukkan hari yang diinginkan : ";
-							cin >> D;
-							cout << "Masukkan bulan yang diinginkan : ";
-							cin >> M;
-							cout << "Masukkan tahun yang diinginkan : ";
-							cin >> Y;
-						} while (!Date::IsTanggalValid(D,M,Y));
-						D2.SetDay(D);
-						D2.SetMonth(M);
-						D2.SetYear(Y);
-						break;
-			case 3	:	if (D1 == D2)
-							cout << "true" << endl;
-						else
-							cout << "false" << endl;
-						break;
-			case 4	:	if (D1 < D2)
-							cout << "true" << endl;
-						else
-							cout << "false" << endl;
-						break;
-			case 5	:	if (D1 > D2)
-							cout << "true" << endl;
-						else
-							cout << "false" << endl;
-						break;
-			case 6	: 	break;
-			default	:	cout << "Input salah" << endl;
-						break;
+		cin >> option;
+		switch (option)
+		{
+			case 1	:
+				int Day, Month, Year;
+				do
+				{
+					cout << "Day : ";
+					cin >> Day;
+					cout << "Month : ";
+					cin >> Month;
+					cout << "Year : ";
+					cin >> Year;
+				} while (!Date::IsComponentofDateValid(Day, Month, Year));
+				D1.SetDayofDate(Day);
+				D1.SetMonthofDate(Month);
+				D1.SetYearofDate(Year);
+				break;
+			case 2	:
+				do
+				{
+					cout << "Day : ";
+					cin >> Day;
+					cout << "Month : ";
+					cin >> Month;
+					cout << "Year : ";
+					cin >> Year;
+				} while (!Date::IsComponentofDateValid(Day, Month, Year));
+				D2.SetDayofDate(Day);
+				D2.SetMonthofDate(Month);
+				D2.SetYearofDate(Year);
+				break;
+			case 3	:
+				if (D1 == D2)
+					cout << "true" << endl;
+				else
+					cout << "false" << endl;
+				break;
+			case 4	:
+				if (D1 < D2)
+					cout << "true" << endl;
+				else
+					cout << "false" << endl;
+				break;
+			case 5	:
+				if (D1 > D2)
+					cout << "true" << endl;
+				else
+					cout << "false" << endl;
+				break;
+			case 6	: 
+				break;
+			default	:
+				cout << "Input salah" << endl;
+				break;
 		}
-	} while (pilihan != 6);
+	} while (option != 6);
 	return 0;
 }
 
-void mainmenu() {
+void Menu()
+{
 	cout << endl << "-----------------------------------" << endl;
 	cout << "1. Ubah Tanggal, Bulan, dan Tahun pada D1" << endl;
 	cout << "2. Ubah Tanggal, Bulan, dan Tahun pada D2" << endl;
-	cout << "3. IsEqual?" << endl;
-	cout << "4. IsSmaller?" << endl;
-	cout << "5. IsBigger?" << endl;
+	cout << "3. IsEqualto?" << endl;
+	cout << "4. IsEarlierthan?" << endl;
+	cout << "5. IsLaterthan?" << endl;
 	cout << "6. Exit" << endl;
 }
 

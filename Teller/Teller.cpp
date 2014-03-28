@@ -1,140 +1,157 @@
+#include <cmath>
 #include "Teller.h"
 
 using namespace std;
 
-Teller::Teller() {
-	this->N = 5;
-	this->Q = new Queue[N];
-	this->QEmpty = new bool[N];
-	for (int i = 0; i < N; i++) {
-		QEmpty[i] = true;
+Teller::Teller()
+{
+	NumberofTeller = 5;
+	T = new Queue[NumberofTeller];
+	TellerServingStatus = new bool[NumberofTeller];
+	for (int i = 0; i < NumberofTeller; i++)
+		TellerServingStatus[i] = false;
+}
+
+Teller::Teller(int NumberofTeller)
+{
+	this->NumberofTeller = NumberofTeller;
+	T = new Queue[NumberofTeller];
+	TellerServingStatus = new bool[NumberofTeller];
+	for (int i = 0; i < NumberofTeller; i++)
+		TellerServingStatus[i] = false;
+}
+
+Teller::Teller(const Teller &T)
+{
+	NumberofTeller = T.NumberofTeller;
+	this->T = new Queue[NumberofTeller];
+	TellerServingStatus = new bool[NumberofTeller];
+	for (int i = 0; i < NumberofTeller; i++)
+	{
+		this->T[i] = T.T[i];
+		TellerServingStatus[i] = T.TellerServingStatus[i];
 	}
 }
 
-Teller::Teller(int N) {
-	this->N = N;
-	this->Q = new Queue[N];
-	this->QEmpty = new bool[N];
-	for (int i = 0; i < N; i++) {
-		QEmpty[i] = true;
+Teller& Teller::operator=(const Teller &T)
+{
+	NumberofTeller = T.NumberofTeller;
+	if (this->T != NULL)
+	{
+		delete this->T;
+		delete TellerServingStatus;
 	}
-}
-
-Teller::Teller(const Teller &T) {
-	this->N = T.N;
-	this->Q = new Queue[N];
-	for (int i = 0; i < N; i++) {
-		this->Q[i] = T.Q[i];
-	}
-	this->QEmpty = new bool[N];
-	for (int i = 0; i < N; i++) {
-		this->QEmpty[i] = T.QEmpty[i];
-	}
-}
-
-Teller& Teller::operator=(const Teller &T) {
-	this->N = T.N;
-	if (this->Q != NULL)
-		delete this->Q;
-	this->Q = new Queue[N];
-	for (int i = 0; i < N; i++) {
-		this->Q[i] = T.Q[i];
-	}
-	if (this->QEmpty != NULL)
-		delete QEmpty;
-	this->QEmpty = new bool[N];
-	for (int i = 0; i < N; i++) {
-		this->QEmpty[i] = T.QEmpty[i];
+	this->T = new Queue[NumberofTeller];
+	TellerServingStatus = new bool[NumberofTeller];
+	for (int i = 0; i < NumberofTeller; i++)
+	{
+		this->T[i] = T.T[i];
+		TellerServingStatus[i] = T.TellerServingStatus[i];
 	}
 	return *this;
 }
 
-Teller::~Teller() {
-	delete Q;
-	delete QEmpty;
+Teller::~Teller()
+{
+	delete T;
+	delete TellerServingStatus;
 }
 
-	// Prosedur Add dan Del
-infotype Teller::SearchThenDel(infotype id) {
-	int i = 0;
+int Teller::DepartureofAnElement(int ID)
+{
 	bool stop = false;
-	while (i < N && !stop) {
-		if (Q[i].InfoHead() == id)
+	int i = 0;
+	while (i < NumberofTeller && !stop)
+	{
+		if (T[i].ContentofHead() == ID)
 			stop = true;
 		else
 			i++;
 	}
-	if (!stop) {
+	if (!stop)
+	{
 		cout << "Not Found" << endl;
 		return 0;
-	} else {
-		int j = Jockeying(i);
-		if (j != -1)
-			Q[j].Add(Q[i].DelJockey());
-		int X = Q[i].Del();
-		if (Q[i].IsEmpty()) {
-			QEmpty[i] = true;
-		}
-		return X;
+	}
+	else
+	{
+		int TellerNumber = Jockeying(i);
+		if (TellerNumber != -1)
+			T[TellerNumber].Enqueue(T[i].DeleteforJockeying());
+		int IDRemoved = T[i].Dequeue();
+		if (T[i].IsQueueEmpty())
+			TellerServingStatus[i] = false;
+		return IDRemoved;
 	}
 }
 
-void Teller::SearchThenAdd(int id) {
-	int min = 0;
-	for (int i = 1; i < N; i++) {
-		if (Q[min].Count() > Q[i].Count()) {
-			min = i;
-		}
+void Teller::ArriveofAnElement(int ID)
+{
+	int Minimum = 0;
+	for (int i = 1; i < NumberofTeller; i++)
+	{
+		if (T[Minimum].Effective() > T[i].Effective())
+			Minimum = i;
 	}
-	if (!Q[min].IsFull()) {
-		if (Q[min].IsEmpty())
-			QEmpty[min] = false;
-		Q[min].Add(id);
+	if (!T[Minimum].IsQueueFull())
+	{
+		if (T[Minimum].IsQueueEmpty())
+			TellerServingStatus[Minimum] = true;
+		T[Minimum].Enqueue(ID);
 	}
 }
 
-void Teller::EndDel() {
-	int cek = 0;
-	for (int j = 0; j < N; j++) {
-		if (QEmpty[j])
-			cek++;
+void Teller::DepartureAll()
+{
+	int NumberofEmptyTeller = 0;
+	for (int j = 0; j < NumberofTeller; j++)
+	{
+		if (!TellerServingStatus[j])
+			NumberofEmptyTeller++;
 	}
-	int i = 0;
-	while (cek != N) {
-		if (!QEmpty[i]) {
-			int X = Q[i].Del();
-			if (Q[i].IsEmpty()) {
-				QEmpty[i] = true;
-				cek++;
+	int TellerNumber = 0;
+	while (NumberofEmptyTeller != NumberofTeller)
+	{
+		if (TellerServingStatus[TellerNumber])
+		{
+			int IDRemoved = T[TellerNumber].Dequeue();
+			if (T[TellerNumber].IsQueueEmpty())
+			{
+				TellerServingStatus[TellerNumber] = false;
+				NumberofEmptyTeller++;
 			}
-			if (X != 0)
-				cout << "Departure " << X << endl;
+			if (IDRemoved != 0)
+				cout << "Departure " << IDRemoved << endl;
 		}
-		if (i == N-1)
-			i = 0;
+		if (TellerNumber == NumberofTeller - 1)
+			TellerNumber = 0;
 		else
-			i++;
+			TellerNumber++;
 	}
 }
 
-int Teller::Jockeying (int iOrigin) {
-	int min = 0;
-	for (int i = 1; i < N; i++) {
-		if (Q[min].Count() > Q[i].Count())
-			min = i;
-		else if (Q[min].Count() == Q[i].Count() && abs(min-iOrigin) > abs(i-iOrigin))
-			min = i;
+void Teller::Print()
+{
+	for (int i = 0; i < NumberofTeller; i++)
+	{
+		if (TellerServingStatus[i])
+			cout << "Teller[" << i << "] = " << T[i];
 	}
-	if (Q[iOrigin].Count() > Q[min].Count() + 2)
-		return min;
+}
+
+int Teller::Jockeying(int iOrigin)
+{
+	int Minimum = 0;
+	for (int i = 1; i < NumberofTeller; i++)
+	{
+		if (T[Minimum].Effective() > T[i].Effective())
+			Minimum = i;
+		else if (T[Minimum].Effective() == T[i].Effective() &&
+				abs(Minimum-iOrigin) > abs(i-iOrigin))
+			Minimum = i;
+	}
+	if (T[iOrigin].Effective() > T[Minimum].Effective() + 2)
+		return Minimum;
 	else
 		return -1;
-}
-
-void Teller::Print() {
-	for (int i = 0; i < N; i++) {
-		if (!QEmpty[i]) {
-			cout << "Q[" << i+1 << "] = " << Q[i];
-		}
-	}
 }

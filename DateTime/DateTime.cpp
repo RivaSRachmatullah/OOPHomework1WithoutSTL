@@ -4,54 +4,57 @@ using namespace std;
 
 // 4 SEKAWAN
 DateTime::DateTime() {}
-DateTime::DateTime(const DateTime& DT) {
-	D = DT.D;
-	T = DT.T;
-}
-DateTime::~DateTime() {}
-	
-/* GETTER */
-Date DateTime::Tanggal() {
-	return D;
-}
-Time DateTime::Waktu () {
-	return T;
-}
-	
-/* SETTER */
-void DateTime::SetTanggal (Date D) {
-	this->D = D;
-}
-/* Mengubah nilai komponen D dengan D di parameter */
-void DateTime::SetWaktu (Time T) {
-	this->T = T;
-}
-/* Mengubah nilai komponen T dengan T di parameter */
 
-/* PREDIKAT */
-bool DateTime::IsDTValid (Date D, Time T) {
-	return Date::IsDateValid(D.GetDay(),D.GetMonth(),D.GetYear()) && Time::IsTimeValid(T.GetHour(),T.GetMinute(),T.GetSecond());
+DateTime::DateTime(const DateTime& DT)
+{
+	DateComponent = DT.DateComponent;
+	TimeComponent = DT.TimeComponent;
 }
-/*	Mengirim true jika D dan T dapat membentuk DateTime yang valid dipakai untuk mengetes SEBELUM membentuk sebuah DateTime */
-bool DateTime::operator== (DateTime DT) {
-	return DT.D == D && DT.T == T;
+
+DateTime::~DateTime() {}
+
+bool DateTime::operator==(DateTime DT)
+{
+	return DT.DateComponent == DateComponent &&
+		DT.TimeComponent == TimeComponent;
 }
-/* Menghasilkan true jika variabel berclass DateTime sama dengan D */
-bool DateTime::operator!= (DateTime DT) {
-	return DT.D != D || DT.T != T;
+
+bool DateTime::operator!=(DateTime DT)
+{
+	return DT.DateComponent != DateComponent ||
+		DT.TimeComponent != TimeComponent;
 }
-/* Menghasilkan true jika variabel berclass DateTime sama dengan D */
-bool DateTime::operator< (DateTime DT) {
-	if (D == DT.D)
-		return T < DT.T;
+
+bool DateTime::operator<(DateTime DT)
+{
+	if (DateComponent == DT.DateComponent)
+		return TimeComponent < DT.TimeComponent;
 	else 
-		return D < DT.D;
+		return DateComponent < DT.DateComponent;
 }
-/* Menghasilkan true jika variabel berclass DateTime kurang dari D */
-bool DateTime::operator> (DateTime DT) {
-	if (D == DT.D)
-		return T > DT.T;
+
+bool DateTime::operator>(DateTime DT)
+{
+	if (DateComponent == DT.DateComponent)
+		return TimeComponent > DT.TimeComponent;
 	else 
-		return D > DT.D;
+		return DateComponent > DT.DateComponent;
 }
-/* Menghasilkan true jika variabel berclass DateTime lebih dari D */
+
+Date DateTime::GetDate()
+{
+	return DateComponent;
+}
+
+Time DateTime::GetTime() {
+	return TimeComponent;
+}
+
+void DateTime::SetDate(Date Date) {
+	DateComponent = Date;
+}
+
+void DateTime::SetTime(Time Time) {
+	TimeComponent = Time;
+}
+

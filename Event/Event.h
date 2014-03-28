@@ -48,7 +48,7 @@ public:
 	void Close();
 	
 private:
-	static infotype id;
+	static int id;
 	DateTime DT, Deadline;
 	char code;
 	Teller *T;

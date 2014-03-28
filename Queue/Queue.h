@@ -1,159 +1,77 @@
-/**\class Queue
+/**
+ * \class Queue
+ * 
+ * @brief Queue Class
+ * @details Represent a Queue
+ * 
+ * @author Riva Syafri Rachmatullah (13512036) for .h file
+ * @author Riva Syafri Rachmatullah (13512036) for .cpp file
  *
- * \brief Class Queue
- *
- * Class ini digunakan untuk merepresentasikan bentuk antrian pada dunia nyata.
- * Berisi tentang prosedur dan fungsi yang diakses untuk mengelola antrian.
- * Definisi Queue kosong: Head = Nil; TAIL = Nil. Catatan implementasi: Q[0] tidak pernah dipakai
- *
- * \note Class belum Generic
- *
- * $Author: Riva Syafri Rachmatullah (.h and .cpp) <br>Indam Muhammad (generic type queue) $
- *
- * \version 1.0 $Revision: 1.2 $
- *
- * $Date: 2014/03/21 00:30:33 $
- *
- * Contact		:	<br>13512026@std.stei.itb.ac.id
- *					<br>13512036@std.stei.itb.ac.id
- *
- * Created on	: 8 Maret 2014 10:00:00
- *
+ * @version v1.3
+ * 
  */
-
-#include <iostream>
-using namespace std;
-
 #ifndef QUEUE_H
 #define QUEUE_H
-	
-/*	PENENTUAN TIPE INFOTYPE DAN ADDRESS */
-	typedef int infotype; // untuk elemen
-	typedef int address; //	untuk indeks tabel
 
-class Queue{
+#include <iostream>
+
+using namespace std;
+
+class Queue
+{
 public:
-	/// Constructor (CTOR)
-	/**	<br>I.S.	: Bebas
-	 *	<br>F.S. 	: Sebuah variabel kosong terbentuk dengan tabel memori untuk queue
-	 *	<br>Proses 	: Membuat sebuah variabel berclass Queue kosong dengan alokasi memori sebanyak 26
+	/**
+	 * @brief Initializes a new instance of the Queue class with 26 block of memory.
 	 */
 	Queue();
 	
-	/// Constructor Parameter (CTORPARAM)
-	/**	<br>I.S.	: MaxEl terdefinisi
-	 *	<br>F.S. 	: Sebuah variabel kosong terbentuk dengan tabel memori untuk queue sesuai MaxEl+1
-	 *	<br>Proses 	: Membuat sebuah variabel berclass Queue kosong dengan alokasi memori sebanyak MaxEl+1
+	/**
+	 * @brief Initializes a new instance of the Queue class with MaximumElementofQueue + 1 block of memory.
+	 * 
+	 * @param[in] MaximumCapacityofQueue Maximum number of element stored on Queue.
 	 */
-	Queue(int MaxEl);
+	Queue(int MaximumCapacityofQueue);
 	
-	/// Copy Constructor (CCTOR)
-	/*	<br>I.S.	: Q terdefinisi
-	 *	<br>F.S. 	: Sebuah variabel kosong terbentuk dengan tabel memori untuk queue sesuai Q.N+1
-	 *	<br>Proses 	: Membuat sebuah variabel berclass Queue kosong dengan alokasi memori sebanyak Q.N+1
+	/**
+	 * @brief Initializes a new instance of the Queue class with all the content of specified Queue.
+	 * 
+	 * @param[in] Q The object Queue that will be copied.
 	 */
 	Queue(const Queue& Q);
 	
-	/// Operator Overloading '='
-	/*	<br>I.S.	: Q terdefinisi
-	 *	<br>F.S. 	: Sebuah variabel kosong terbentuk dengan tabel memori untuk queue sesuai Q.N+1
-	 *	<br>Proses 	: Membuat sebuah variabel berclass Queue kosong dengan alokasi memori sebanyak Q.N+1
+	/**
+	 * @brief Copy all content of specified Queue to current Queue.
+	 * 
+	 * @param[in] Q The object Queue that will be copied.
 	 */
 	Queue& operator=(const Queue& Q);
 	
-	/// Destructor (DTOR)
-	/**	<br>Proses 	: Mengembalikan memori Q
-	 *	<br>I.S.	: Objek berclass Queue ada
-	 *	<br>F.S.	: Objek dihapus dari memori dengan tabel penyimpanan didealokasi
+	/**
+	 * @brief Clear an instance of Queue from memory.
 	 */
 	~Queue();
 	
-
-	///	Getter Head
-	/** Mengambil alamat head pada variabel berclass Queue */
-	address Head();
-	
-	///	Getter Tail
-	/** Mengambil alamat tail pada variabel berclass Queue */
-	address Tail();
-	
-	///	Getter Elemen Head
-	/** Mengambil isi dari alamat head pada variabel berclass Queue */
-	infotype InfoHead();
-	
-	///	Getter Elemen Tail
-	/** Mengambil isi dari alamat tail pada variabel berclass Queue */
-	infotype InfoTail();
-	
-	///	Getter Panjang Queue
-	/** Mengambil N yang ada pada variabel berclass Queue */
-	int MaxEl();
-	
-	/// Pemeriksa kosong tidaknya suatu Queue
-	/**	Fungsi yang akan mengirim true apabila Q kosong dan false jika sebaliknya.
-	 *	Disebut kosong apabila HEAD dan TAIL berada di indeks array ke-0.
+	/**
+	 * @brief Writes the specified Queue followed by the current line terminator to the standard output stream.
+	 * @details Queue will be printed {x1,x2,x3,...,xn}
+	 * 
+	 * @param[in] output An instance of class ostream.
+	 * @param[in] Q An instance of class Queue.
 	 */
-	bool IsEmpty ();
-	
-	/// Pemeriksa penuh tidaknya suatu Queue
-	/**	Fungsi yang akan mengirim true apabila array penampung elemen Q penuh
-	 *	dan false jika sebaliknya.
-	 *	Disebut penuh apabila jumlah elemen sama dengan N.
-	 */
-	bool IsFull ();
-	
-	/// Penghitung jumlah elemen queue
-	/**	Fungsi yang menghitung banyaknya elemen yang ada pada Queue.
-	 *	Mengirimkan 0 jika Q kosong. */
-	int Count ();
-	
-
-	/// Operasi Dasar Add
-	/**	Prosedur yang melakukan penambahan elemen pada queue
-	 *	<br>Proses 	: Menambahkan X pada variabel berclass Queue dengan aturan FIFO
-	 *	<br>I.S.	: Variabel berclass Queue mungkin kosong dan tabel penampung elemen TIDAK penuh 
-	 *	<br>F.S.	: X menjadi TAIL yang baru, TAIL "maju".
-	 *			  Jika TAIL baru = MaxEl + 1, maka TAIL diset = 1. 
-	 */
-	void Add (infotype X);
-	
-	/// Operasi Dasar Delete
-	/**	<br>Proses 	: Menghapus elemen pertama pada variabel berclass Queue dengan aturan FIFO 
-	 *	<br>I.S.	: Variabel berclass Queue tidak kosong
-	 *	<br>F.S.	: X = nilai elemen HEAD pada <br><br>I.S., Jika Queue masih isi : HEAD "maju".
-	 *			  Jika HEAD baru menjadi MaxEl + 1, maka HEAD diset = 1;
-	 *			  Jika Queue menjadi kosong, HEAD = TAIL = Nil.
-	 */
-	infotype Del ();
-	
-	/// Operasi Delete untuk Jockeying
-	/**	<br>Proses 	: Menghapus elemen tail pada variabel berclass Queue karena efek jockeying 
-	 *	<br>I.S.	: Variabel berclass Queue tidak kosong
-	 *	<br>F.S.	: X = nilai elemen TAIL pada <br><br>I.S., Jika Queue masih berisi : TAIL "mundur".
-	 *			  Jika TAIL baru menjadi 0, maka TAIL diset = N;
-	 *			  Jika Queue menjadi kosong, HEAD = TAIL = Nil.
-	 */
-	infotype DelJockey();
-
-	/// Operator Tulis
-	/** Operator untuk menuliskan variabel Q berclass Queue ke layar 
-	 *	<br>I.S.	: Q terdefinisi
-	 *	<br>F.S.	: Nilai Q ditulis ke layar dengan format {..,..,..,..}
-	 *	<br>Proses	: Menulis semua elemen dari variabel Q ke layar 
-	 */
-	friend ostream& operator<<(ostream &output, const Queue& Q) {
-		if (Q.HEAD != 0) {
+	friend ostream& operator<<(ostream &output, const Queue& Q)
+	{
+		if (Q.Head != 0) {
 			output << "{";
-			output << Q.Q[Q.HEAD];
-			if (Q.HEAD != Q.TAIL) {
-				int i = Q.HEAD+1;
+			output << Q.Q[Q.Head];
+			if (Q.Head != Q.Tail) {
+				int i = Q.Head + 1;
 				do {
 					output << "," << Q.Q[i];
 					i++;
-					if (i == Q.N+1) {
+					if (i == Q.CapacityofQueue + 1) {
 						i = 1;
 					}
-				} while (i != Q.TAIL+1);
+				} while (i != Q.Tail + 1);
 			}
 			output << "}" << endl;
 		} else {
@@ -162,12 +80,79 @@ public:
 		return output;
 	}
 
+	/**
+	 * @brief Gets the Head address of queue.
+	 * @return The Head address of queue.
+	 */
+	int AddressofHead();
+	
+	/**
+	 * @brief Gets the Tail address of queue.
+	 * @return The Tail address of queue.
+	 */
+	int AddressofTail();
+	
+	/**
+	 * @brief Gets the content on Queue's Head address.
+	 * @exception InvalidOperationException Queue is empty.
+	 * @return The value of Queue's Head address.
+	 */
+	int ContentofHead();
+	
+	/**
+	 * @brief Gets the content on Queue's Tail address.
+	 * @exception InvalidOperationException Queue is empty.
+	 * @return The value of Queue's Tail address.
+	 */
+	int ContentofTail();
+	
+	/**
+	 * @brief Gets the maximum capacity that can be stored on Queue.
+	 * @return The maximum capacity of Queue.
+	 */
+	int Size();
+	
+	/**
+	 * @brief Determines whether Queue is empty or not.
+	 * @details Queue is empty if Head and Tail are 0.
+	 * @return true if Queue is empty; otherwise false.
+	 */
+	bool IsQueueEmpty();
+	
+	/**
+	 * @brief Determines whether Queue is full or not.
+	 * @details Queue is full if Count() equals to the MaximumCapacityofQueue.
+	 * @return true if Queue is full; otherwise false.
+	 */
+	bool IsQueueFull();
+	
+	/**
+	 * @brief Gets the number of elements stored on Queue.
+	 * @return The number of elements stored.
+	 */
+	int Effective();
+	
+	/**
+	 * @brief Add element to Queue's Tail.
+	 * @param[in] Element Element to input.
+	 */
+	void Enqueue(int Element);
+	
+	/**
+	 * @brief Delete element on Queue's Head.
+	 * @return 0 if Queue is empty; otherwise element on Queue's Head.
+	 */
+	int Dequeue();
+	
+	/**
+	 * @brief Delete element on Queue's Tail.
+	 * @exception InvalidOperationException Queue is empty.
+	 * @return Element on Queue's Tail.
+	 */
+	int DeleteforJockeying();
+
 private:
-	static const int Nil = 0;
-	infotype *Q; /* tabel penyimpanan elemen */
-	address HEAD; /* alamat penghapusan */
-	address TAIL; /* alamat penambahan */
-	int N; /* maksimum banyaknya elemen queue */
+	int *Q, Head, Tail, CapacityofQueue;
 };
 
 #endif

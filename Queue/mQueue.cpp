@@ -6,7 +6,7 @@
 #include <iostream>
 
 /*	Header Prosedur dan Fungsi */
-void menu();
+void Menu();
 
 using namespace std;
 
@@ -14,40 +14,40 @@ using namespace std;
 int main() {
 	/* Kamus */
 	int MaxEl,opt;
-	infotype X,Y;
+	int X,Y;
 	bool exit=false;
 	/* Algoritma */
 	cout << "Panjang Queue = ";
 	cin >> MaxEl;
 	Queue *Q = new Queue(MaxEl);
 	do {
-		menu();
+		Menu();
 		cin >> opt;
 		switch (opt) {
-			case 1 	: 	if (Q->IsEmpty()) {
+			case 1 	: 	if (Q->IsQueueEmpty()) {
 							cout <<"Queue kosong.\n";
 						} else {
 							cout << "Queue tidak kosong.\n";	
-							cout << "Jumlah elemen = " << Q->Count() << endl;
-							cout << "Jumlah maksimum elemen = " << Q->MaxEl() << endl;
+							cout << "Jumlah elemen = " << Q->Effective() << endl;
+							cout << "Jumlah maksimum elemen = " << Q->Size() << endl;
 						}
 						cout << endl;
 						break;
-			case 2 	:	if (Q->IsFull()) {
+			case 2 	:	if (Q->IsQueueFull()) {
 							cout << "Queue penuh.\n";
 						} else {
 							cout << "Queue tidak penuh.\n";	
-							cout << "Jumlah elemen = " << Q->Count() << endl;
-							cout << "Jumlah maksimum elemen = " << Q->MaxEl() << endl;
+							cout << "Jumlah elemen = " << Q->Effective() << endl;
+							cout << "Jumlah maksimum elemen = " << Q->Size() << endl;
 						}
 						cout << endl;
 						break;
 			case 3	: 	cout << "Masukkan masukan yang mau ditambah ke queue = ";
 						cin >> X;
-						Q->Add(X);
+						Q->Enqueue(X);
 						cout << "\n";
 						break;
-			case 4	:	Y = Q->Del();
+			case 4	:	Y = Q->Dequeue();
 						cout << "elemen : " << Y << endl;
 						cout << "\n";
 						break;
@@ -62,13 +62,11 @@ int main() {
 }
 
 /*	Realisasi Prosedur dan Fungsi */
-void menu() {
-	/* Kamus */
-	/* Algoritma */
+void Menu() {
 	cout << "1. Cek Kosong\n";
 	cout << "2. Cek Penuh\n";
-	cout << "3. Cek void Add\n";
-	cout << "4. Cek void Del\n";
+	cout << "3. Add\n";
+	cout << "4. Del\n";
 	cout << "5. Print Queue\n";
 	cout << "6. Exit\n";
 	cout << "\n";

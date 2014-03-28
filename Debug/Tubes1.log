@@ -1,26 +1,23 @@
-﻿Build started 3/24/2014 12:34:48.
-     1>Project "D:\Documents\Kuliah\IF2210 - Pemrograman Berorientasi Objek\Tubes1\Tubes1.vcxproj" on node 2 (Build target(s)).
+﻿Build started 3/28/2014 22:16:49.
+     1>Project "D:\Perkuliahan\Mata Kuliah\Semester 4\IF2210 - Pemrograman Berorientasi Objek\Tubes1\Tubes1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DateTime\DateTime.cpp Date\Date.cpp Event\Event.cpp main.cpp Queue\Queue.cpp Teller\Teller.cpp Time\Time.cpp
-         Time.cpp
-         Teller.cpp
-         Queue.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Event\Event.cpp Queue\Queue.cpp main.cpp
          main.cpp
+     1>d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\event\event.h(26): error C2039: 'SearchThenAdd' : is not a member of 'Teller'
+                 d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\teller\teller.h(22) : see declaration of 'Teller'
+     1>d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\event\event.h(31): error C2039: 'SearchThenDel' : is not a member of 'Teller'
+                 d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\teller\teller.h(22) : see declaration of 'Teller'
+         Queue.cpp
          Event.cpp
-         Date.cpp
-         DateTime.cpp
+     1>d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\event\event.h(26): error C2039: 'SearchThenAdd' : is not a member of 'Teller'
+                 d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\teller\teller.h(22) : see declaration of 'Teller'
+     1>d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\event\event.h(31): error C2039: 'SearchThenDel' : is not a member of 'Teller'
+                 d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\teller\teller.h(22) : see declaration of 'Teller'
+     1>d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\event\event.cpp(31): error C2039: 'EndDel' : is not a member of 'Teller'
+                 d:\perkuliahan\mata kuliah\semester 4\if2210 - pemrograman berorientasi objek\tubes1\teller\teller.h(22) : see declaration of 'Teller'
          Generating Code...
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\Kuliah\IF2210 - Pemrograman Berorientasi Objek\Tubes1\Debug\Tubes1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Documents\Kuliah\IF2210 - Pemrograman Berorientasi Objek\Tubes1\Debug\Tubes1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\Kuliah\IF2210 - Pemrograman Berorientasi Objek\Tubes1\Debug\Tubes1.lib" /MACHINE:X86 Debug\DateTime.obj
-         Debug\Date.obj
-         Debug\Event.obj
-         Debug\main.obj
-         Debug\Queue.obj
-         Debug\Teller.obj
-         Debug\Time.obj
-         Tubes1.vcxproj -> D:\Documents\Kuliah\IF2210 - Pemrograman Berorientasi Objek\Tubes1\Debug\Tubes1.exe
-     1>Done Building Project "D:\Documents\Kuliah\IF2210 - Pemrograman Berorientasi Objek\Tubes1\Tubes1.vcxproj" (Build target(s)).
+     1>Done Building Project "D:\Perkuliahan\Mata Kuliah\Semester 4\IF2210 - Pemrograman Berorientasi Objek\Tubes1\Tubes1.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:13.75
+Time Elapsed 00:00:01.66
