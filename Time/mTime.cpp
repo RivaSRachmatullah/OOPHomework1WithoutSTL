@@ -3,20 +3,21 @@
 
 using namespace std;
 
-void mainmenu();
+void Menu();
 
-/* PROGRAM UTAMA */
-int main () {
+int main ()
+{
 	Time T1, T2;
-	int pilihan;
+	int Option;
 	cin >> T1 >> T2;
-	do {
-		cout << endl << "T1 : " << T1 << endl;
-		cout << "T2 : " << T2 << endl;
-		mainmenu();
+	do
+	{
+		cout << "T1 : " << T1 << endl << "T2 : " << T2 << endl;
+		Menu();
 		cout << "Pilihan anda : ";
-		cin >> pilihan;
-		switch (pilihan) {
+		cin >> Option;
+		switch (Option)
+		{
 			case 1	:	
 				int H,M,S;
 				do {
@@ -68,17 +69,17 @@ int main () {
 				cout << "Input salah" << endl;
 				break;
 		}
-	} while (pilihan != 6);
+	} while (Option != 6);
 	return 0;
 }
 
-void mainmenu() {
+void Menu() {
 	cout << endl << "-----------------------------------" << endl;
 	cout << "1. Ubah Jam, Menit, dan Detik pada T1" << endl;
 	cout << "2. Ubah Jam, Menit, dan Detik pada T2" << endl;
-	cout << "3. IsEqual?" << endl;
-	cout << "4. IsEarlierThan?" << endl;
-	cout << "5. IsLaterThan?" << endl;
+	cout << "3. Is Equal?" << endl;
+	cout << "4. Is Earlier Than?" << endl;
+	cout << "5. Is Later Than?" << endl;
 	cout << "6. Exit" << endl;
 }
 

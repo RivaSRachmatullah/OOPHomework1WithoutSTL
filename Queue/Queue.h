@@ -55,28 +55,34 @@ public:
 	 * @brief Writes the specified Queue followed by the current line terminator to the standard output stream.
 	 * @details Queue will be printed {x1,x2,x3,...,xn}
 	 * 
-	 * @param[in] output An instance of class ostream.
+	 * @param[out] output An instance of class ostream.
 	 * @param[in] Q An instance of class Queue.
 	 */
 	friend ostream& operator<<(ostream &output, const Queue& Q)
 	{
-		if (Q.Head != 0) {
+		if (Q.Head != 0)
+		{
 			output << "{";
 			output << Q.Q[Q.Head];
+			int TemporaryInt = Q.Tail + 1;
+			if (TemporaryInt == Q.CapacityofQueue + 1)
+				TemporaryInt = 1;
 			if (Q.Head != Q.Tail) {
 				int i = Q.Head + 1;
-				do {
+				if (i == Q.CapacityofQueue + 1)
+					i = 1;
+				while (i != TemporaryInt)
+				{
 					output << "," << Q.Q[i];
 					i++;
-					if (i == Q.CapacityofQueue + 1) {
+					if (i == Q.CapacityofQueue + 1)
 						i = 1;
-					}
-				} while (i != Q.Tail + 1);
+				}
 			}
 			output << "}" << endl;
-		} else {
-			output << "{}" << endl;
 		}
+		else
+			output << "{}" << endl;
 		return output;
 	}
 

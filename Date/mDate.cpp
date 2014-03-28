@@ -5,13 +5,13 @@ using namespace std;
 
 void Menu();
 
-/* PROGRAM UTAMA */
 int main()
 {
 	Date D1, D2;
 	cin >> D1 >> D2;
 	int option;
-	do {
+	do
+	{
 		cout << "D1 : " << D1 << endl << "D2 : " << D2 << endl;
 		Menu();
 		cout << "Pilihan anda : ";
@@ -80,9 +80,9 @@ void Menu()
 	cout << endl << "-----------------------------------" << endl;
 	cout << "1. Ubah Tanggal, Bulan, dan Tahun pada D1" << endl;
 	cout << "2. Ubah Tanggal, Bulan, dan Tahun pada D2" << endl;
-	cout << "3. IsEqualto?" << endl;
-	cout << "4. IsEarlierthan?" << endl;
-	cout << "5. IsLaterthan?" << endl;
+	cout << "3. Is Equal to?" << endl;
+	cout << "4. Is Earlier than?" << endl;
+	cout << "5. Is Later than?" << endl;
 	cout << "6. Exit" << endl;
 }
 

@@ -4,6 +4,8 @@
  * @brief DateTime Class
  * @details Represent Date and Time
  * 
+ * @note Use Date and Time Class
+ * 
  * @author Riva Syafri Rachmatullah (13512036) for .h file
  * @author Indam Muhammad (13512036) and Riva Syafri Rachmatullah (13512036) for .cpp file
  *
@@ -24,11 +26,15 @@ class DateTime
 {
 public:
 	/**
+	 * @relates Date
+	 * @relates Time
 	 * @brief Initializes a new instance of the DateTime class.
 	 */
 	DateTime();
 	
 	/**
+	 * @relates Date
+	 * @relates Time
 	 * @brief Initializes a new instance of the DateTime class from specified DateTime.
 	 * 
 	 * @param[in] DT The object DateTime that will be copied.
@@ -75,7 +81,7 @@ public:
 	/**
 	 * @brief Read the specified DateTime to the standard input stream.
 	 * 
-	 * @param[in] input An instance of class istream.
+	 * @param[out] input An instance of class istream.
 	 * @param[out] DT An instance of class DateTime.
 	 */
 	friend istream& operator>>(istream &input, DateTime &DT) {
@@ -102,7 +108,7 @@ public:
 	/**
 	 * @brief Writes the specified DateTime followed by the current line terminator to the standard output stream.
 	 * 
-	 * @param[in] output An instance of class ostream.
+	 * @param[out] output An instance of class ostream.
 	 * @param[in] DT An instance of class DateTime.
 	 */
 	friend ostream& operator<<(ostream &output, const DateTime &DT) {

@@ -12,8 +12,8 @@ ADT1=../Queue/Queue
 compile-test: $(MAIN).cpp $(ADT).o $(ADT1).o
 	g++ -o $(MAIN) $(MAIN).cpp $(ADT).o $(ADT1).o
 	
-$(ADT).o: $(ADT).cpp $(ADT).h
-	g++ -c $(ADT).cpp
+$(ADT).o: $(ADT).cpp $(ADT).h $(ADT1).o
+	g++ -c $(ADT).cpp $(ADT1).o
 $(ADT1).o: $(ADT1).cpp $(ADT1).h
 	g++ -c $(ADT1).cpp
 grade:

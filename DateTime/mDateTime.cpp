@@ -3,22 +3,22 @@
 
 using namespace std;
 
-void mainmenu();
+void Menu();
 
-/* PROGRAM UTAMA */
-int main () {
+int main ()
+{
 	Date D;
 	Time T;
 	DateTime DT1, DT2;
 	cin >> DT1 >> DT2;
-	int pilihan;
-	do {
-		cout << endl << "DT1 : " << DT1 << endl;
-		cout << "DT2 : " << DT2 << endl;
-		mainmenu();
+	int Option;
+	do
+	{
+		cout << "DT1 : " << DT1 << endl << "DT2 : " << DT2 << endl;
+		Menu();
 		cout << "Pilihan anda : ";
-		cin >> pilihan;
-		switch (pilihan) {
+		cin >> Option;
+		switch (Option) {
 			case 1	:	
 				cout << "Date : ";
 				cin >> D;
@@ -56,20 +56,21 @@ int main () {
 			case 6	: 
 				break;
 			default	:
-				cout << "Input salah" << endl;
+				cout << "Wrong input!" << endl;
 				break;
 		}
-	} while (pilihan != 6);
+	} while (Option != 6);
 	return 0;
 }
 
-void mainmenu() {
+void Menu()
+{
 	cout << endl << "-----------------------------------" << endl;
 	cout << "1. Ubah Tanggal dan Waktu pada DT1" << endl;
 	cout << "2. Ubah Tanggal dan Waktu pada DT2" << endl;
-	cout << "3. IsEqual?" << endl;
-	cout << "4. IsEarlierThan?" << endl;
-	cout << "5. IsLaterThan?" << endl;
+	cout << "3. Is Equal?" << endl;
+	cout << "4. Is Earlier Than?" << endl;
+	cout << "5. Is Later Than?" << endl;
 	cout << "6. Exit" << endl;
 }
 

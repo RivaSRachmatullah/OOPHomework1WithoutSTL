@@ -71,7 +71,7 @@ public:
 	/**
 	 * @brief Read the specified Date to the standard input stream.
 	 * 
-	 * @param[in] input An instance of class istream.
+	 * @param[out] input An instance of class istream.
 	 * @param[out] D An instance of class Date.
 	 */
 	friend istream& operator>>(istream &input, Date &D)
@@ -93,7 +93,7 @@ public:
 	/**
 	 * @brief Writes the specified Date followed by the current line terminator to the standard output stream.
 	 * 
-	 * @param[in] output An instance of class ostream.
+	 * @param[out] output An instance of class ostream.
 	 * @param[in] D An instance of class Date.
 	 */
 	friend ostream& operator<<(ostream &output, const Date &D)

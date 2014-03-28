@@ -72,7 +72,7 @@ public:
 	/**
 	 * @brief Writes the specified Time followed by the current line terminator to the standard output stream.
 	 * 
-	 * @param[in] output An instance of class ostream.
+	 * @param[out] output An instance of class ostream.
 	 * @param[in] T An instance of class Time.
 	 */
 	friend ostream& operator<<(ostream &output, const Time& T)
@@ -84,7 +84,7 @@ public:
 	/**
 	 * @brief Read the specified Time to the standard input stream.
 	 * 
-	 * @param[in] input An instance of class istream.
+	 * @param[out] input An instance of class istream.
 	 * @param[out] T An instance of class Time.
 	 */
 	friend istream& operator>>(istream &input, Time& T) {

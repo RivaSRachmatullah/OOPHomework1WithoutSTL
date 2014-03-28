@@ -14,20 +14,20 @@ Event::~Event() {
 	delete T;
 }
 
-DateTime Event::getTime() {
+DateTime Event::GetDateTime() {
 	return DT;
 }
 
-DateTime Event::getDeadline() {
+DateTime Event::GetDeadline() {
 	return Deadline;
 }
 
-void Event::setDeadline(DateTime Deadline) {
+void Event::SetDeadline(DateTime Deadline) {
 	this->Deadline = Deadline;
 }
 
 void Event::Close() {
 	cout << "Loop terminate" << endl;
-	T->EndDel();
+	T->DepartureAll();
 }
 
