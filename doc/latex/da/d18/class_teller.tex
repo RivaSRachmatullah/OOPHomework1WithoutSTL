@@ -1,0 +1,308 @@
+\hypertarget{class_teller}{\section{Teller Class Reference}
+\label{class_teller}\index{Teller@{Teller}}
+}
+
+
+\hyperlink{class_teller}{Teller} Class.  
+
+
+
+
+{\ttfamily \#include $<$Teller.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_teller_a652e56e65d8d73a53d709b8299e1c4a7}{Teller} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of \hyperlink{class_teller}{Teller} class with 5 block \hyperlink{class_queue}{Queue}. \end{DoxyCompactList}\item 
+\hyperlink{class_teller_a705ab8f9f4d16cba8f8ca9590d1598ca}{Teller} (int Numberof\-Teller)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of \hyperlink{class_teller}{Teller} class with Numberof\-Teller block \hyperlink{class_queue}{Queue}. \end{DoxyCompactList}\item 
+\hyperlink{class_teller_a96340cfc1acefbad9e329723dc08fabc}{Teller} (const \hyperlink{class_teller}{Teller} \&T)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_teller}{Teller} class with all the content of specified \hyperlink{class_teller}{Teller}. \end{DoxyCompactList}\item 
+\hyperlink{class_teller}{Teller} \& \hyperlink{class_teller_a8409f8ad1eb830534ad9d23d0ebacc57}{operator=} (const \hyperlink{class_teller}{Teller} \&T)
+\begin{DoxyCompactList}\small\item\em Copy all content of specified \hyperlink{class_teller}{Teller} to current \hyperlink{class_teller}{Teller}. \end{DoxyCompactList}\item 
+\hyperlink{class_teller_af61263c98d7ff236ca84ec551919d7e7}{$\sim$\-Teller} ()
+\begin{DoxyCompactList}\small\item\em Clear an instance of \hyperlink{class_teller}{Teller} from memory. \end{DoxyCompactList}\item 
+int \hyperlink{class_teller_a53829996d557a0bdf9513366461d7986}{Departureof\-An\-Element} (int I\-D)
+\begin{DoxyCompactList}\small\item\em Delete element with the value I\-D from certain \hyperlink{class_queue}{Queue}. \end{DoxyCompactList}\item 
+void \hyperlink{class_teller_ae5db2a5bde036fa0e0ff27f257cdea27}{Arriveof\-An\-Element} (int I\-D)
+\begin{DoxyCompactList}\small\item\em Add element with the value I\-D to certain \hyperlink{class_queue}{Queue}. \end{DoxyCompactList}\item 
+void \hyperlink{class_teller_a22b0dcc673d701ec82f88fa0cf58900a}{Departure\-All} ()
+\begin{DoxyCompactList}\small\item\em Delete all element from all \hyperlink{class_queue}{Queue} and Print the element to console. \end{DoxyCompactList}\item 
+void \hyperlink{class_teller_a85b5bfcdab1ad0f595f544bda26dea1e}{Print} ()
+\begin{DoxyCompactList}\small\item\em Print all the \hyperlink{class_queue}{Queue} in \hyperlink{class_teller}{Teller}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_teller}{Teller} Class. 
+
+Represent a \hyperlink{class_teller}{Teller}
+
+\begin{DoxyAuthor}{Author}
+Riva Syafri Rachmatullah (13512036) for .h file 
+
+Riva Syafri Rachmatullah (13512036) for .cpp file
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\-3 
+\end{DoxyVersion}
+
+
+Definition at line 26 of file Teller.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_teller_a652e56e65d8d73a53d709b8299e1c4a7}{\index{Teller@{Teller}!Teller@{Teller}}
+\index{Teller@{Teller}!Teller@{Teller}}
+\subsubsection[{Teller}]{\setlength{\rightskip}{0pt plus 5cm}Teller\-::\-Teller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_teller_a652e56e65d8d73a53d709b8299e1c4a7}
+
+
+Initializes a new instance of \hyperlink{class_teller}{Teller} class with 5 block \hyperlink{class_queue}{Queue}. 
+
+
+
+Definition at line 11 of file Teller.\-cpp.
+
+\hypertarget{class_teller_a705ab8f9f4d16cba8f8ca9590d1598ca}{\index{Teller@{Teller}!Teller@{Teller}}
+\index{Teller@{Teller}!Teller@{Teller}}
+\subsubsection[{Teller}]{\setlength{\rightskip}{0pt plus 5cm}Teller\-::\-Teller (
+\begin{DoxyParamCaption}
+\item[{int}]{Numberof\-Teller}
+\end{DoxyParamCaption}
+)}}\label{class_teller_a705ab8f9f4d16cba8f8ca9590d1598ca}
+
+
+Initializes a new instance of \hyperlink{class_teller}{Teller} class with Numberof\-Teller block \hyperlink{class_queue}{Queue}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Numberof\-Teller} & The number of teller. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file Teller.\-cpp.
+
+\hypertarget{class_teller_a96340cfc1acefbad9e329723dc08fabc}{\index{Teller@{Teller}!Teller@{Teller}}
+\index{Teller@{Teller}!Teller@{Teller}}
+\subsubsection[{Teller}]{\setlength{\rightskip}{0pt plus 5cm}Teller\-::\-Teller (
+\begin{DoxyParamCaption}
+\item[{const {\bf Teller} \&}]{T}
+\end{DoxyParamCaption}
+)}}\label{class_teller_a96340cfc1acefbad9e329723dc08fabc}
+
+
+Initializes a new instance of the \hyperlink{class_teller}{Teller} class with all the content of specified \hyperlink{class_teller}{Teller}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em T} & The object \hyperlink{class_teller}{Teller} that will be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 29 of file Teller.\-cpp.
+
+\hypertarget{class_teller_af61263c98d7ff236ca84ec551919d7e7}{\index{Teller@{Teller}!$\sim$\-Teller@{$\sim$\-Teller}}
+\index{$\sim$\-Teller@{$\sim$\-Teller}!Teller@{Teller}}
+\subsubsection[{$\sim$\-Teller}]{\setlength{\rightskip}{0pt plus 5cm}Teller\-::$\sim$\-Teller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_teller_af61263c98d7ff236ca84ec551919d7e7}
+
+
+Clear an instance of \hyperlink{class_teller}{Teller} from memory. 
+
+
+
+Definition at line 59 of file Teller.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_teller_ae5db2a5bde036fa0e0ff27f257cdea27}{\index{Teller@{Teller}!Arriveof\-An\-Element@{Arriveof\-An\-Element}}
+\index{Arriveof\-An\-Element@{Arriveof\-An\-Element}!Teller@{Teller}}
+\subsubsection[{Arriveof\-An\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void Teller\-::\-Arriveof\-An\-Element (
+\begin{DoxyParamCaption}
+\item[{int}]{I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_teller_ae5db2a5bde036fa0e0ff27f257cdea27}
+
+
+Add element with the value I\-D to certain \hyperlink{class_queue}{Queue}. 
+
+It will add element I\-D to the \hyperlink{class_queue}{Queue} who has the least number of element in \hyperlink{class_queue}{Queue}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em I\-D} & The element to add. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 93 of file Teller.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d18/class_teller_ae5db2a5bde036fa0e0ff27f257cdea27_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{da/d18/class_teller_ae5db2a5bde036fa0e0ff27f257cdea27_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_teller_a22b0dcc673d701ec82f88fa0cf58900a}{\index{Teller@{Teller}!Departure\-All@{Departure\-All}}
+\index{Departure\-All@{Departure\-All}!Teller@{Teller}}
+\subsubsection[{Departure\-All}]{\setlength{\rightskip}{0pt plus 5cm}void Teller\-::\-Departure\-All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_teller_a22b0dcc673d701ec82f88fa0cf58900a}
+
+
+Delete all element from all \hyperlink{class_queue}{Queue} and Print the element to console. 
+
+
+
+Definition at line 109 of file Teller.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{da/d18/class_teller_a22b0dcc673d701ec82f88fa0cf58900a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d18/class_teller_a22b0dcc673d701ec82f88fa0cf58900a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_teller_a53829996d557a0bdf9513366461d7986}{\index{Teller@{Teller}!Departureof\-An\-Element@{Departureof\-An\-Element}}
+\index{Departureof\-An\-Element@{Departureof\-An\-Element}!Teller@{Teller}}
+\subsubsection[{Departureof\-An\-Element}]{\setlength{\rightskip}{0pt plus 5cm}int Teller\-::\-Departureof\-An\-Element (
+\begin{DoxyParamCaption}
+\item[{int}]{I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_teller_a53829996d557a0bdf9513366461d7986}
+
+
+Delete element with the value I\-D from certain \hyperlink{class_queue}{Queue}. 
+
+This method does searching I\-D on \hyperlink{class_queue}{Queue}'s head address. If the I\-D isn't found then it will give a message and return 0.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em I\-D} & The element to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\-D of element if found; 0 if not found. 
+\end{DoxyReturn}
+
+
+Definition at line 65 of file Teller.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d18/class_teller_a53829996d557a0bdf9513366461d7986_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{da/d18/class_teller_a53829996d557a0bdf9513366461d7986_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_teller_a8409f8ad1eb830534ad9d23d0ebacc57}{\index{Teller@{Teller}!operator=@{operator=}}
+\index{operator=@{operator=}!Teller@{Teller}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Teller} \& Teller\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Teller} \&}]{T}
+\end{DoxyParamCaption}
+)}}\label{class_teller_a8409f8ad1eb830534ad9d23d0ebacc57}
+
+
+Copy all content of specified \hyperlink{class_teller}{Teller} to current \hyperlink{class_teller}{Teller}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em T} & The object \hyperlink{class_teller}{Teller} that will be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file Teller.\-cpp.
+
+\hypertarget{class_teller_a85b5bfcdab1ad0f595f544bda26dea1e}{\index{Teller@{Teller}!Print@{Print}}
+\index{Print@{Print}!Teller@{Teller}}
+\subsubsection[{Print}]{\setlength{\rightskip}{0pt plus 5cm}void Teller\-::\-Print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_teller_a85b5bfcdab1ad0f595f544bda26dea1e}
+
+
+Print all the \hyperlink{class_queue}{Queue} in \hyperlink{class_teller}{Teller}. 
+
+Print will be printed like Qi = \{x1,x2,...,xn\} 
+
+Definition at line 138 of file Teller.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{da/d18/class_teller_a85b5bfcdab1ad0f595f544bda26dea1e_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Teller/\hyperlink{_teller_8h}{Teller.\-h}\item 
+Teller/\hyperlink{_teller_8cpp}{Teller.\-cpp}\end{DoxyCompactItemize}

@@ -1,4 +1,9 @@
 /**
+ * @file
+ * @brief Header Event Class
+ * 
+ */
+/**
  * \class Event
  * 
  * @brief Event Class
@@ -48,10 +53,10 @@ public:
 	~Event();
 	
 	/**
-	 * @brief Read the specified Time to the standard input stream.
+	 * @brief Read the specified Event to the standard input stream.
 	 * 
 	 * @param[out] input An instance of class istream.
-	 * @param[out] T An instance of class Time.
+	 * @param[out] E An instance of class Event.
 	 */
 	friend istream& operator>>(istream &input, Event &E)
 	{

@@ -1,0 +1,248 @@
+\hypertarget{class_event}{\section{Event Class Reference}
+\label{class_event}\index{Event@{Event}}
+}
+
+
+\hyperlink{class_event}{Event} Class.  
+
+
+
+
+{\ttfamily \#include $<$Event.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_event_a7704ec01ce91e673885792054214b3d2}{$\sim$\-Event} ()
+\begin{DoxyCompactList}\small\item\em Clear an instance of \hyperlink{class_event}{Event} from memory. \end{DoxyCompactList}\item 
+\hyperlink{class_date_time}{Date\-Time} \hyperlink{class_event_ab828b0511da4f76c3090c88d8c9bbe2c}{Get\-Date\-Time} ()
+\begin{DoxyCompactList}\small\item\em Gets \hyperlink{class_date_time}{Date\-Time} on an instance \hyperlink{class_event}{Event}. \end{DoxyCompactList}\item 
+\hyperlink{class_date_time}{Date\-Time} \hyperlink{class_event_aeaea78f235bea3fc083f1a070c7e821a}{Get\-Deadline} ()
+\begin{DoxyCompactList}\small\item\em Gets Deadline on an instance \hyperlink{class_event}{Event}. \end{DoxyCompactList}\item 
+void \hyperlink{class_event_a70a345abe7ed4136058524ffdf3d3d53}{Set\-Deadline} (\hyperlink{class_date_time}{Date\-Time} Deadline)
+\begin{DoxyCompactList}\small\item\em Set Deadline on \hyperlink{class_event}{Event}. \end{DoxyCompactList}\item 
+void \hyperlink{class_event_acc0755128d9534def434679355004e79}{Close} ()
+\begin{DoxyCompactList}\small\item\em Clear all the \hyperlink{class_teller}{Teller}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \hyperlink{class_event_aefab4a45e8de8a212980527a504d6061}{operator$>$$>$} (istream \&input, \hyperlink{class_event}{Event} \&E)
+\begin{DoxyCompactList}\small\item\em Read the specified \hyperlink{class_event}{Event} to the standard input stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_event_a5a40dd4708297f7031e29b39e039ae10}{Event} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_event}{Event} class with 5 \hyperlink{class_teller}{Teller}. \end{DoxyCompactList}\item 
+\hyperlink{class_event_a0cb91170821c7766ba1a142f80c1816e}{Event} (int Numberof\-Teller)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_event}{Event} class with specified amount of \hyperlink{class_teller}{Teller}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_event}{Event} Class. 
+
+Represent a \hyperlink{class_event}{Event}
+
+\begin{DoxyAuthor}{Author}
+Riva Syafri Rachmatullah (13512036) for .h file 
+
+Riva Syafri Rachmatullah (13512036) for .cpp file
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\-2 
+\end{DoxyVersion}
+
+
+Definition at line 27 of file Event.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_event_a7704ec01ce91e673885792054214b3d2}{\index{Event@{Event}!$\sim$\-Event@{$\sim$\-Event}}
+\index{$\sim$\-Event@{$\sim$\-Event}!Event@{Event}}
+\subsubsection[{$\sim$\-Event}]{\setlength{\rightskip}{0pt plus 5cm}Event\-::$\sim$\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_event_a7704ec01ce91e673885792054214b3d2}
+
+
+Clear an instance of \hyperlink{class_event}{Event} from memory. 
+
+
+
+Definition at line 18 of file Event.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_event_acc0755128d9534def434679355004e79}{\index{Event@{Event}!Close@{Close}}
+\index{Close@{Close}!Event@{Event}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}void Event\-::\-Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_event_acc0755128d9534def434679355004e79}
+
+
+Clear all the \hyperlink{class_teller}{Teller}. 
+
+Each of teller will delete an element and print it. 
+
+Definition at line 34 of file Event.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/da9/class_event_acc0755128d9534def434679355004e79_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{d1/da9/class_event_acc0755128d9534def434679355004e79_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_event_ab828b0511da4f76c3090c88d8c9bbe2c}{\index{Event@{Event}!Get\-Date\-Time@{Get\-Date\-Time}}
+\index{Get\-Date\-Time@{Get\-Date\-Time}!Event@{Event}}
+\subsubsection[{Get\-Date\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time} Event\-::\-Get\-Date\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_event_ab828b0511da4f76c3090c88d8c9bbe2c}
+
+
+Gets \hyperlink{class_date_time}{Date\-Time} on an instance \hyperlink{class_event}{Event}. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_date_time}{Date\-Time} of \hyperlink{class_event}{Event}. 
+\end{DoxyReturn}
+
+
+Definition at line 22 of file Event.\-cpp.
+
+\hypertarget{class_event_aeaea78f235bea3fc083f1a070c7e821a}{\index{Event@{Event}!Get\-Deadline@{Get\-Deadline}}
+\index{Get\-Deadline@{Get\-Deadline}!Event@{Event}}
+\subsubsection[{Get\-Deadline}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time} Event\-::\-Get\-Deadline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_event_aeaea78f235bea3fc083f1a070c7e821a}
+
+
+Gets Deadline on an instance \hyperlink{class_event}{Event}. 
+
+\begin{DoxyReturn}{Returns}
+Deadline of \hyperlink{class_event}{Event}. 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file Event.\-cpp.
+
+\hypertarget{class_event_a70a345abe7ed4136058524ffdf3d3d53}{\index{Event@{Event}!Set\-Deadline@{Set\-Deadline}}
+\index{Set\-Deadline@{Set\-Deadline}!Event@{Event}}
+\subsubsection[{Set\-Deadline}]{\setlength{\rightskip}{0pt plus 5cm}void Event\-::\-Set\-Deadline (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time}}]{Deadline}
+\end{DoxyParamCaption}
+)}}\label{class_event_a70a345abe7ed4136058524ffdf3d3d53}
+
+
+Set Deadline on \hyperlink{class_event}{Event}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Deadline} & The \hyperlink{class_date_time}{Date\-Time} for a Deadline of \hyperlink{class_event}{Event}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 30 of file Event.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{d1/da9/class_event_a70a345abe7ed4136058524ffdf3d3d53_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_event_a5a40dd4708297f7031e29b39e039ae10}{\index{Event@{Event}!Event@{Event}}
+\index{Event@{Event}!Event@{Event}}
+\subsubsection[{Event}]{\setlength{\rightskip}{0pt plus 5cm}Event\-::\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_event_a5a40dd4708297f7031e29b39e039ae10}
+
+
+Initializes a new instance of the \hyperlink{class_event}{Event} class with 5 \hyperlink{class_teller}{Teller}. 
+
+
+
+Definition at line 10 of file Event.\-cpp.
+
+\hypertarget{class_event_a0cb91170821c7766ba1a142f80c1816e}{\index{Event@{Event}!Event@{Event}}
+\index{Event@{Event}!Event@{Event}}
+\subsubsection[{Event}]{\setlength{\rightskip}{0pt plus 5cm}Event\-::\-Event (
+\begin{DoxyParamCaption}
+\item[{int}]{Numberof\-Teller}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_event_a0cb91170821c7766ba1a142f80c1816e}
+
+
+Initializes a new instance of the \hyperlink{class_event}{Event} class with specified amount of \hyperlink{class_teller}{Teller}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Numberof\-Teller} & Amount of \hyperlink{class_teller}{Teller}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file Event.\-cpp.
+
+\hypertarget{class_event_aefab4a45e8de8a212980527a504d6061}{\index{Event@{Event}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Event@{Event}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{input, }
+\item[{{\bf Event} \&}]{E}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_event_aefab4a45e8de8a212980527a504d6061}
+
+
+Read the specified \hyperlink{class_event}{Event} to the standard input stream. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em input} & An instance of class istream. \\
+\hline
+\mbox{\tt out}  & {\em E} & An instance of class \hyperlink{class_event}{Event}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file Event.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Event/\hyperlink{_event_8h}{Event.\-h}\item 
+Event/\hyperlink{_event_8cpp}{Event.\-cpp}\end{DoxyCompactItemize}

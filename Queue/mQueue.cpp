@@ -1,22 +1,18 @@
-/* Nama File	: mQueue.cpp										*/
-/* Deskripsi	: DRIVER ADT QUEUE									*/
-
-/*	File Include */
+/**
+ * @file
+ * @brief Driver Queue Class
+ * 
+ */
 #include "Queue.h"
 #include <iostream>
 
-/*	Header Prosedur dan Fungsi */
 void Menu();
 
 using namespace std;
 
-/*	Program Utama */
 int main() {
-	/* Kamus */
-	int MaxEl,opt;
-	int X,Y;
 	bool exit=false;
-	/* Algoritma */
+	int MaxEl, opt, X, Y;
 	cout << "Panjang Queue = ";
 	cin >> MaxEl;
 	Queue *Q = new Queue(MaxEl);
@@ -61,7 +57,6 @@ int main() {
 	delete Q;
 }
 
-/*	Realisasi Prosedur dan Fungsi */
 void Menu() {
 	cout << "1. Cek Kosong\n";
 	cout << "2. Cek Penuh\n";

@@ -1,3 +1,8 @@
+/**
+ * @file
+ * @brief Implementation Queue Class
+ * 
+ */
 #include "Queue.h"
 #include <cstdlib>
 

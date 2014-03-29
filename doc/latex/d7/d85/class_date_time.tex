@@ -1,0 +1,370 @@
+\hypertarget{class_date_time}{\section{Date\-Time Class Reference}
+\label{class_date_time}\index{Date\-Time@{Date\-Time}}
+}
+
+
+\hyperlink{class_date_time}{Date\-Time} Class.  
+
+
+
+
+{\ttfamily \#include $<$Date\-Time.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_date_time_a5c46d6432c6df5d550603b529e825dc5}{$\sim$\-Date\-Time} ()
+\begin{DoxyCompactList}\small\item\em Clear an instance of \hyperlink{class_date_time}{Date\-Time} from memory. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_time_a61752bfcf9bfe5e2e9d493ac42fe3ee8}{operator==} (\hyperlink{class_date_time}{Date\-Time} D\-T)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object \hyperlink{class_date_time}{Date\-Time} is equal to the current object \hyperlink{class_date_time}{Date\-Time}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_time_a6478a78407126774d91a631dedea5e84}{operator!=} (\hyperlink{class_date_time}{Date\-Time} D\-T)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object \hyperlink{class_date_time}{Date\-Time} is not equal to the current object \hyperlink{class_date_time}{Date\-Time}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_time_a08f9db72e1d0f49916fe6686218402e8}{operator$<$} (\hyperlink{class_date_time}{Date\-Time} D\-T)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object \hyperlink{class_date_time}{Date\-Time} is earlier than the current object \hyperlink{class_date_time}{Date\-Time}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_time_a0ebaa48c3c3c55751f3201c29379664e}{operator$>$} (\hyperlink{class_date_time}{Date\-Time} D\-T)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object \hyperlink{class_date_time}{Date\-Time} is later than the current object \hyperlink{class_date_time}{Date\-Time}. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{class_date_time_a4c206227fdf530b862f4df46ee0da5b7}{Get\-Date} ()
+\begin{DoxyCompactList}\small\item\em Gets the date from \hyperlink{class_date_time}{Date\-Time}. \end{DoxyCompactList}\item 
+\hyperlink{class_time}{Time} \hyperlink{class_date_time_ab0b5363b639394082b8464107b96ef9c}{Get\-Time} ()
+\begin{DoxyCompactList}\small\item\em Gets the time from \hyperlink{class_date_time}{Date\-Time}. \end{DoxyCompactList}\item 
+void \hyperlink{class_date_time_af59006af64ac325b50d5d8c1dc6057b6}{Set\-Date} (\hyperlink{class_date}{Date} \hyperlink{class_date}{Date})
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{class_date}{Date} of \hyperlink{class_date_time}{Date\-Time} with specified \hyperlink{class_date}{Date}. \end{DoxyCompactList}\item 
+void \hyperlink{class_date_time_a59940dc8f5f4f7d938e2bdbe3b68eba2}{Set\-Time} (\hyperlink{class_time}{Time} \hyperlink{class_time}{Time})
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{class_time}{Time} of \hyperlink{class_date_time}{Date\-Time} with specified \hyperlink{class_time}{Time}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \hyperlink{class_date_time_a2a7b5a6ce0f12397e2fc83060106cfbd}{operator$>$$>$} (istream \&input, \hyperlink{class_date_time}{Date\-Time} \&D\-T)
+\begin{DoxyCompactList}\small\item\em Read the specified \hyperlink{class_date_time}{Date\-Time} to the standard input stream. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{class_date_time_aaffa9ef1d2a2e41e2e2765dbcbfdcdae}{operator$<$$<$} (ostream \&output, const \hyperlink{class_date_time}{Date\-Time} \&D\-T)
+\begin{DoxyCompactList}\small\item\em Writes the specified \hyperlink{class_date_time}{Date\-Time} followed by the current line terminator to the standard output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_date_time_a3ccfb87f7a2e9683b91964e32d907161}{Date\-Time} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_date_time}{Date\-Time} class. \end{DoxyCompactList}\item 
+\hyperlink{class_date_time_a68fb98c071f90a98561c3b33737f9600}{Date\-Time} (const \hyperlink{class_date_time}{Date\-Time} \&D\-T)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_date_time}{Date\-Time} class from specified \hyperlink{class_date_time}{Date\-Time}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_date_time}{Date\-Time} Class. 
+
+Represent \hyperlink{class_date}{Date} and \hyperlink{class_time}{Time}
+
+\begin{DoxyNote}{Note}
+Use \hyperlink{class_date}{Date} and \hyperlink{class_time}{Time} Class
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Riva Syafri Rachmatullah (13512036) for .h file 
+
+Indam Muhammad (13512036) and Riva Syafri Rachmatullah (13512036) for .cpp file
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\-3 
+\end{DoxyVersion}
+
+
+Definition at line 30 of file Date\-Time.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_date_time_a5c46d6432c6df5d550603b529e825dc5}{\index{Date\-Time@{Date\-Time}!$\sim$\-Date\-Time@{$\sim$\-Date\-Time}}
+\index{$\sim$\-Date\-Time@{$\sim$\-Date\-Time}!DateTime@{Date\-Time}}
+\subsubsection[{$\sim$\-Date\-Time}]{\setlength{\rightskip}{0pt plus 5cm}Date\-Time\-::$\sim$\-Date\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_time_a5c46d6432c6df5d550603b529e825dc5}
+
+
+Clear an instance of \hyperlink{class_date_time}{Date\-Time} from memory. 
+
+
+
+Definition at line 19 of file Date\-Time.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_date_time_a4c206227fdf530b862f4df46ee0da5b7}{\index{Date\-Time@{Date\-Time}!Get\-Date@{Get\-Date}}
+\index{Get\-Date@{Get\-Date}!DateTime@{Date\-Time}}
+\subsubsection[{Get\-Date}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date} Date\-Time\-::\-Get\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_time_a4c206227fdf530b862f4df46ee0da5b7}
+
+
+Gets the date from \hyperlink{class_date_time}{Date\-Time}. 
+
+\begin{DoxyReturn}{Returns}
+The time from \hyperlink{class_date_time}{Date\-Time}. 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file Date\-Time.\-cpp.
+
+\hypertarget{class_date_time_ab0b5363b639394082b8464107b96ef9c}{\index{Date\-Time@{Date\-Time}!Get\-Time@{Get\-Time}}
+\index{Get\-Time@{Get\-Time}!DateTime@{Date\-Time}}
+\subsubsection[{Get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Time} Date\-Time\-::\-Get\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_time_ab0b5363b639394082b8464107b96ef9c}
+
+
+Gets the time from \hyperlink{class_date_time}{Date\-Time}. 
+
+\begin{DoxyReturn}{Returns}
+The time from \hyperlink{class_date_time}{Date\-Time}. 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file Date\-Time.\-cpp.
+
+\hypertarget{class_date_time_a6478a78407126774d91a631dedea5e84}{\index{Date\-Time@{Date\-Time}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!DateTime@{Date\-Time}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\-Time\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time}}]{D\-T}
+\end{DoxyParamCaption}
+)}}\label{class_date_time_a6478a78407126774d91a631dedea5e84}
+
+
+Determines whether the specified object \hyperlink{class_date_time}{Date\-Time} is not equal to the current object \hyperlink{class_date_time}{Date\-Time}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-T} & The object \hyperlink{class_date_time}{Date\-Time} to compare with the current object \hyperlink{class_date_time}{Date\-Time}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified object \hyperlink{class_date_time}{Date\-Time} is not equal to the current object \hyperlink{class_date_time}{Date\-Time}; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file Date\-Time.\-cpp.
+
+\hypertarget{class_date_time_a08f9db72e1d0f49916fe6686218402e8}{\index{Date\-Time@{Date\-Time}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!DateTime@{Date\-Time}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\-Time\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time}}]{D\-T}
+\end{DoxyParamCaption}
+)}}\label{class_date_time_a08f9db72e1d0f49916fe6686218402e8}
+
+
+Determines whether the specified object \hyperlink{class_date_time}{Date\-Time} is earlier than the current object \hyperlink{class_date_time}{Date\-Time}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-T} & The object \hyperlink{class_date_time}{Date\-Time} to compare with the current object \hyperlink{class_date_time}{Date\-Time}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified object \hyperlink{class_date_time}{Date\-Time} is earlier than to the current object \hyperlink{class_date_time}{Date\-Time}; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file Date\-Time.\-cpp.
+
+\hypertarget{class_date_time_a61752bfcf9bfe5e2e9d493ac42fe3ee8}{\index{Date\-Time@{Date\-Time}!operator==@{operator==}}
+\index{operator==@{operator==}!DateTime@{Date\-Time}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\-Time\-::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time}}]{D\-T}
+\end{DoxyParamCaption}
+)}}\label{class_date_time_a61752bfcf9bfe5e2e9d493ac42fe3ee8}
+
+
+Determines whether the specified object \hyperlink{class_date_time}{Date\-Time} is equal to the current object \hyperlink{class_date_time}{Date\-Time}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-T} & The object \hyperlink{class_date_time}{Date\-Time} to compare with the current object \hyperlink{class_date_time}{Date\-Time}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified object \hyperlink{class_date_time}{Date\-Time} is equal to the current object \hyperlink{class_date_time}{Date\-Time}; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file Date\-Time.\-cpp.
+
+\hypertarget{class_date_time_a0ebaa48c3c3c55751f3201c29379664e}{\index{Date\-Time@{Date\-Time}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!DateTime@{Date\-Time}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\-Time\-::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time}}]{D\-T}
+\end{DoxyParamCaption}
+)}}\label{class_date_time_a0ebaa48c3c3c55751f3201c29379664e}
+
+
+Determines whether the specified object \hyperlink{class_date_time}{Date\-Time} is later than the current object \hyperlink{class_date_time}{Date\-Time}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-T} & The object \hyperlink{class_date_time}{Date\-Time} to compare with the current object \hyperlink{class_date_time}{Date\-Time}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified object \hyperlink{class_date_time}{Date\-Time} is later than to the current object \hyperlink{class_date_time}{Date\-Time}; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file Date\-Time.\-cpp.
+
+\hypertarget{class_date_time_af59006af64ac325b50d5d8c1dc6057b6}{\index{Date\-Time@{Date\-Time}!Set\-Date@{Set\-Date}}
+\index{Set\-Date@{Set\-Date}!DateTime@{Date\-Time}}
+\subsubsection[{Set\-Date}]{\setlength{\rightskip}{0pt plus 5cm}void Date\-Time\-::\-Set\-Date (
+\begin{DoxyParamCaption}
+\item[{{\bf Date}}]{Date}
+\end{DoxyParamCaption}
+)}}\label{class_date_time_af59006af64ac325b50d5d8c1dc6057b6}
+
+
+Set the \hyperlink{class_date}{Date} of \hyperlink{class_date_time}{Date\-Time} with specified \hyperlink{class_date}{Date}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \hyperlink{class_date}{Date}} & The new \hyperlink{class_date}{Date} of \hyperlink{class_date_time}{Date\-Time}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file Date\-Time.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{d7/d85/class_date_time_af59006af64ac325b50d5d8c1dc6057b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_date_time_a59940dc8f5f4f7d938e2bdbe3b68eba2}{\index{Date\-Time@{Date\-Time}!Set\-Time@{Set\-Time}}
+\index{Set\-Time@{Set\-Time}!DateTime@{Date\-Time}}
+\subsubsection[{Set\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Date\-Time\-::\-Set\-Time (
+\begin{DoxyParamCaption}
+\item[{{\bf Time}}]{Time}
+\end{DoxyParamCaption}
+)}}\label{class_date_time_a59940dc8f5f4f7d938e2bdbe3b68eba2}
+
+
+Set the \hyperlink{class_time}{Time} of \hyperlink{class_date_time}{Date\-Time} with specified \hyperlink{class_time}{Time}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \hyperlink{class_time}{Time}} & The new \hyperlink{class_time}{Time} of \hyperlink{class_date_time}{Date\-Time}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file Date\-Time.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{d7/d85/class_date_time_a59940dc8f5f4f7d938e2bdbe3b68eba2_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_date_time_a3ccfb87f7a2e9683b91964e32d907161}{\index{Date\-Time@{Date\-Time}!Date\-Time@{Date\-Time}}
+\index{Date\-Time@{Date\-Time}!DateTime@{Date\-Time}}
+\subsubsection[{Date\-Time}]{\setlength{\rightskip}{0pt plus 5cm}Date\-Time\-::\-Date\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_date_time_a3ccfb87f7a2e9683b91964e32d907161}
+
+
+Initializes a new instance of the \hyperlink{class_date_time}{Date\-Time} class. 
+
+
+
+Definition at line 11 of file Date\-Time.\-cpp.
+
+\hypertarget{class_date_time_a68fb98c071f90a98561c3b33737f9600}{\index{Date\-Time@{Date\-Time}!Date\-Time@{Date\-Time}}
+\index{Date\-Time@{Date\-Time}!DateTime@{Date\-Time}}
+\subsubsection[{Date\-Time}]{\setlength{\rightskip}{0pt plus 5cm}Date\-Time\-::\-Date\-Time (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date\-Time} \&}]{D\-T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}}\label{class_date_time_a68fb98c071f90a98561c3b33737f9600}
+
+
+Initializes a new instance of the \hyperlink{class_date_time}{Date\-Time} class from specified \hyperlink{class_date_time}{Date\-Time}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D\-T} & The object \hyperlink{class_date_time}{Date\-Time} that will be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 13 of file Date\-Time.\-cpp.
+
+\hypertarget{class_date_time_aaffa9ef1d2a2e41e2e2765dbcbfdcdae}{\index{Date\-Time@{Date\-Time}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!DateTime@{Date\-Time}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{output, }
+\item[{const {\bf Date\-Time} \&}]{D\-T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_date_time_aaffa9ef1d2a2e41e2e2765dbcbfdcdae}
+
+
+Writes the specified \hyperlink{class_date_time}{Date\-Time} followed by the current line terminator to the standard output stream. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em output} & An instance of class ostream. \\
+\hline
+\mbox{\tt in}  & {\em D\-T} & An instance of class \hyperlink{class_date_time}{Date\-Time}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file Date\-Time.\-h.
+
+\hypertarget{class_date_time_a2a7b5a6ce0f12397e2fc83060106cfbd}{\index{Date\-Time@{Date\-Time}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!DateTime@{Date\-Time}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{input, }
+\item[{{\bf Date\-Time} \&}]{D\-T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_date_time_a2a7b5a6ce0f12397e2fc83060106cfbd}
+
+
+Read the specified \hyperlink{class_date_time}{Date\-Time} to the standard input stream. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em input} & An instance of class istream. \\
+\hline
+\mbox{\tt out}  & {\em D\-T} & An instance of class \hyperlink{class_date_time}{Date\-Time}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 96 of file Date\-Time.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Date\-Time/\hyperlink{_date_time_8h}{Date\-Time.\-h}\item 
+Date\-Time/\hyperlink{_date_time_8cpp}{Date\-Time.\-cpp}\end{DoxyCompactItemize}

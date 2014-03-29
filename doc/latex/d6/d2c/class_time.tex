@@ -1,0 +1,470 @@
+\hypertarget{class_time}{\section{Time Class Reference}
+\label{class_time}\index{Time@{Time}}
+}
+
+
+\hyperlink{class_time}{Time} Class.  
+
+
+
+
+{\ttfamily \#include $<$Time.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_time_a4245e409c7347d1d671858962c2ca3b5}{Time} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of \hyperlink{class_time}{Time}. \end{DoxyCompactList}\item 
+\hyperlink{class_time_aa90303dd0454141b15ceb358d60795a4}{Time} (const \hyperlink{class_time}{Time} \&T)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of \hyperlink{class_time}{Time} from specified \hyperlink{class_time}{Time} instance. \end{DoxyCompactList}\item 
+\hyperlink{class_time_a1e92dbe963fa3cdd6bea207680f5f6d1}{$\sim$\-Time} ()
+\begin{DoxyCompactList}\small\item\em Clear an instance of \hyperlink{class_time}{Time} from memory. \end{DoxyCompactList}\item 
+bool \hyperlink{class_time_a0e5c32707d684d728e2b2f4f33748cf0}{operator==} (const \hyperlink{class_time}{Time} \&T)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object \hyperlink{class_time}{Time} is equal to the current object \hyperlink{class_time}{Time}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_time_aa582792aedd7600a67245f574650dcb5}{operator!=} (const \hyperlink{class_time}{Time} \&T)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object \hyperlink{class_time}{Time} is not equal to the current object \hyperlink{class_time}{Time}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_time_a2105a3d96442b30c78de1c39cfe78a43}{operator$<$} (const \hyperlink{class_time}{Time} \&T)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object \hyperlink{class_time}{Time} is earlier than the current object \hyperlink{class_time}{Time}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_time_a5685f6f63cfad7d5e87aaac121bdc455}{operator$>$} (const \hyperlink{class_time}{Time} \&T)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object \hyperlink{class_time}{Time} is later than the current object \hyperlink{class_time}{Time}. \end{DoxyCompactList}\item 
+int \hyperlink{class_time_a48e43f8a54d938d4ffbf6443c73b4ffd}{Get\-Hour\-Element} ()
+\begin{DoxyCompactList}\small\item\em Gets the hour element of specified \hyperlink{class_time}{Time}. \end{DoxyCompactList}\item 
+int \hyperlink{class_time_a1aa88252331ef2e9f91a3ffe82e3d378}{Get\-Minute\-Element} ()
+\begin{DoxyCompactList}\small\item\em Gets the minute element of specified \hyperlink{class_time}{Time}. \end{DoxyCompactList}\item 
+int \hyperlink{class_time_a998ba1fdc211afdc48bae6b74412f609}{Get\-Second\-Element} ()
+\begin{DoxyCompactList}\small\item\em Gets the second element of specified \hyperlink{class_time}{Time}. \end{DoxyCompactList}\item 
+void \hyperlink{class_time_a97e5d72787a0b47c786349df031b44e8}{Set\-Hour\-Element} (int Hour\-Element)
+\begin{DoxyCompactList}\small\item\em Set the hour element of time with specified hour. \end{DoxyCompactList}\item 
+void \hyperlink{class_time_a5cbba1ef9416cc8466b60e2ef789bd86}{Set\-Minute\-Element} (int Minute\-Element)
+\begin{DoxyCompactList}\small\item\em Set the minute element of time with specified minute. \end{DoxyCompactList}\item 
+void \hyperlink{class_time_ad100ad8e6e9bc35043881c697f7efef1}{Set\-Second\-Element} (int Second\-Element)
+\begin{DoxyCompactList}\small\item\em Set the second element of time with specified second. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_time_a73518dd61e22a29dded0c808a746e6be}{Is\-Elementof\-Time\-Valid} (int Hour\-Element, int Minute\-Element, int Second\-Element)
+\begin{DoxyCompactList}\small\item\em Determines if the specified elements of time is a valid time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_time_af7462b6d18ba08745290b681487bed88}{operator$<$$<$} (ostream \&output, const \hyperlink{class_time}{Time} \&T)
+\begin{DoxyCompactList}\small\item\em Writes the specified \hyperlink{class_time}{Time} followed by the current line terminator to the standard output stream. \end{DoxyCompactList}\item 
+istream \& \hyperlink{class_time_af8dde22bf0e747b2b3525ff7b8d648f4}{operator$>$$>$} (istream \&input, \hyperlink{class_time}{Time} \&T)
+\begin{DoxyCompactList}\small\item\em Read the specified \hyperlink{class_time}{Time} to the standard input stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_time}{Time} Class. 
+
+Represent a \hyperlink{class_time}{Time}
+
+\begin{DoxyAuthor}{Author}
+Riva Syafri Rachmatullah (13512036) for .h file 
+
+Indam Muhammad (13512026) and Riva Syafri Rachmatullah (13512036) for .cpp file
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\-2 
+\end{DoxyVersion}
+
+
+Definition at line 25 of file Time.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_time_a4245e409c7347d1d671858962c2ca3b5}{\index{Time@{Time}!Time@{Time}}
+\index{Time@{Time}!Time@{Time}}
+\subsubsection[{Time}]{\setlength{\rightskip}{0pt plus 5cm}Time\-::\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_time_a4245e409c7347d1d671858962c2ca3b5}
+
+
+Initializes a new instance of \hyperlink{class_time}{Time}. 
+
+
+
+Definition at line 8 of file Time.\-cpp.
+
+\hypertarget{class_time_aa90303dd0454141b15ceb358d60795a4}{\index{Time@{Time}!Time@{Time}}
+\index{Time@{Time}!Time@{Time}}
+\subsubsection[{Time}]{\setlength{\rightskip}{0pt plus 5cm}Time\-::\-Time (
+\begin{DoxyParamCaption}
+\item[{const {\bf Time} \&}]{T}
+\end{DoxyParamCaption}
+)}}\label{class_time_aa90303dd0454141b15ceb358d60795a4}
+
+
+Initializes a new instance of \hyperlink{class_time}{Time} from specified \hyperlink{class_time}{Time} instance. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em T} & The object \hyperlink{class_time}{Time} that will be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 15 of file Time.\-cpp.
+
+\hypertarget{class_time_a1e92dbe963fa3cdd6bea207680f5f6d1}{\index{Time@{Time}!$\sim$\-Time@{$\sim$\-Time}}
+\index{$\sim$\-Time@{$\sim$\-Time}!Time@{Time}}
+\subsubsection[{$\sim$\-Time}]{\setlength{\rightskip}{0pt plus 5cm}Time\-::$\sim$\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_time_a1e92dbe963fa3cdd6bea207680f5f6d1}
+
+
+Clear an instance of \hyperlink{class_time}{Time} from memory. 
+
+
+
+Definition at line 22 of file Time.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_time_a48e43f8a54d938d4ffbf6443c73b4ffd}{\index{Time@{Time}!Get\-Hour\-Element@{Get\-Hour\-Element}}
+\index{Get\-Hour\-Element@{Get\-Hour\-Element}!Time@{Time}}
+\subsubsection[{Get\-Hour\-Element}]{\setlength{\rightskip}{0pt plus 5cm}int Time\-::\-Get\-Hour\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_time_a48e43f8a54d938d4ffbf6443c73b4ffd}
+
+
+Gets the hour element of specified \hyperlink{class_time}{Time}. 
+
+\begin{DoxyReturn}{Returns}
+The hour element of time. 
+\end{DoxyReturn}
+
+
+Definition at line 71 of file Time.\-cpp.
+
+\hypertarget{class_time_a1aa88252331ef2e9f91a3ffe82e3d378}{\index{Time@{Time}!Get\-Minute\-Element@{Get\-Minute\-Element}}
+\index{Get\-Minute\-Element@{Get\-Minute\-Element}!Time@{Time}}
+\subsubsection[{Get\-Minute\-Element}]{\setlength{\rightskip}{0pt plus 5cm}int Time\-::\-Get\-Minute\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_time_a1aa88252331ef2e9f91a3ffe82e3d378}
+
+
+Gets the minute element of specified \hyperlink{class_time}{Time}. 
+
+\begin{DoxyReturn}{Returns}
+The minute element of time. 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file Time.\-cpp.
+
+\hypertarget{class_time_a998ba1fdc211afdc48bae6b74412f609}{\index{Time@{Time}!Get\-Second\-Element@{Get\-Second\-Element}}
+\index{Get\-Second\-Element@{Get\-Second\-Element}!Time@{Time}}
+\subsubsection[{Get\-Second\-Element}]{\setlength{\rightskip}{0pt plus 5cm}int Time\-::\-Get\-Second\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_time_a998ba1fdc211afdc48bae6b74412f609}
+
+
+Gets the second element of specified \hyperlink{class_time}{Time}. 
+
+\begin{DoxyReturn}{Returns}
+The second element of time. 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file Time.\-cpp.
+
+\hypertarget{class_time_a73518dd61e22a29dded0c808a746e6be}{\index{Time@{Time}!Is\-Elementof\-Time\-Valid@{Is\-Elementof\-Time\-Valid}}
+\index{Is\-Elementof\-Time\-Valid@{Is\-Elementof\-Time\-Valid}!Time@{Time}}
+\subsubsection[{Is\-Elementof\-Time\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-::\-Is\-Elementof\-Time\-Valid (
+\begin{DoxyParamCaption}
+\item[{int}]{Hour\-Element, }
+\item[{int}]{Minute\-Element, }
+\item[{int}]{Second\-Element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_time_a73518dd61e22a29dded0c808a746e6be}
+
+
+Determines if the specified elements of time is a valid time. 
+
+Elements of \hyperlink{class_time}{Time} will be valid if Hour\-Element is equal and between 0 to 23 with Minute\-Element and Second\-Element are equal and between 0 to 59.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Hour\-Element} & The hour element of time. \\
+\hline
+\mbox{\tt in}  & {\em Minute\-Element} & The minute element of time. \\
+\hline
+\mbox{\tt in}  & {\em Second\-Element} & The second element of time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if all elements of \hyperlink{class_time}{Time} is valid. 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file Time.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{d6/d2c/class_time_a73518dd61e22a29dded0c808a746e6be_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_time_aa582792aedd7600a67245f574650dcb5}{\index{Time@{Time}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Time@{Time}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Time} \&}]{T}
+\end{DoxyParamCaption}
+)}}\label{class_time_aa582792aedd7600a67245f574650dcb5}
+
+
+Determines whether the specified object \hyperlink{class_time}{Time} is not equal to the current object \hyperlink{class_time}{Time}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em T} & The object \hyperlink{class_time}{Time} to compare with the current object \hyperlink{class_time}{Time}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified object \hyperlink{class_time}{Time} is not equal to the current object \hyperlink{class_time}{Time}; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file Time.\-cpp.
+
+\hypertarget{class_time_a2105a3d96442b30c78de1c39cfe78a43}{\index{Time@{Time}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Time@{Time}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Time} \&}]{T}
+\end{DoxyParamCaption}
+)}}\label{class_time_a2105a3d96442b30c78de1c39cfe78a43}
+
+
+Determines whether the specified object \hyperlink{class_time}{Time} is earlier than the current object \hyperlink{class_time}{Time}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em T} & The object \hyperlink{class_time}{Time} to compare with the current object \hyperlink{class_time}{Time}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified object \hyperlink{class_time}{Time} is earlier than the current object \hyperlink{class_time}{Time}; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file Time.\-cpp.
+
+\hypertarget{class_time_a0e5c32707d684d728e2b2f4f33748cf0}{\index{Time@{Time}!operator==@{operator==}}
+\index{operator==@{operator==}!Time@{Time}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Time} \&}]{T}
+\end{DoxyParamCaption}
+)}}\label{class_time_a0e5c32707d684d728e2b2f4f33748cf0}
+
+
+Determines whether the specified object \hyperlink{class_time}{Time} is equal to the current object \hyperlink{class_time}{Time}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em T} & The object \hyperlink{class_time}{Time} to compare with the current object \hyperlink{class_time}{Time}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified object \hyperlink{class_time}{Time} is equal to the current object \hyperlink{class_time}{Time}; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file Time.\-cpp.
+
+\hypertarget{class_time_a5685f6f63cfad7d5e87aaac121bdc455}{\index{Time@{Time}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Time@{Time}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Time} \&}]{T}
+\end{DoxyParamCaption}
+)}}\label{class_time_a5685f6f63cfad7d5e87aaac121bdc455}
+
+
+Determines whether the specified object \hyperlink{class_time}{Time} is later than the current object \hyperlink{class_time}{Time}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em T} & The object \hyperlink{class_time}{Time} to compare with the current object \hyperlink{class_time}{Time}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified object \hyperlink{class_time}{Time} is later than the current object \hyperlink{class_time}{Time}; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 51 of file Time.\-cpp.
+
+\hypertarget{class_time_a97e5d72787a0b47c786349df031b44e8}{\index{Time@{Time}!Set\-Hour\-Element@{Set\-Hour\-Element}}
+\index{Set\-Hour\-Element@{Set\-Hour\-Element}!Time@{Time}}
+\subsubsection[{Set\-Hour\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void Time\-::\-Set\-Hour\-Element (
+\begin{DoxyParamCaption}
+\item[{int}]{Hour\-Element}
+\end{DoxyParamCaption}
+)}}\label{class_time_a97e5d72787a0b47c786349df031b44e8}
+
+
+Set the hour element of time with specified hour. 
+
+Parameter must be a valid Hour\-Element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Hour\-Element} & The new hour element of time. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 83 of file Time.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{d6/d2c/class_time_a97e5d72787a0b47c786349df031b44e8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_time_a5cbba1ef9416cc8466b60e2ef789bd86}{\index{Time@{Time}!Set\-Minute\-Element@{Set\-Minute\-Element}}
+\index{Set\-Minute\-Element@{Set\-Minute\-Element}!Time@{Time}}
+\subsubsection[{Set\-Minute\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void Time\-::\-Set\-Minute\-Element (
+\begin{DoxyParamCaption}
+\item[{int}]{Minute\-Element}
+\end{DoxyParamCaption}
+)}}\label{class_time_a5cbba1ef9416cc8466b60e2ef789bd86}
+
+
+Set the minute element of time with specified minute. 
+
+Parameter must be a valid Minute\-Element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Minute\-Element} & The new minute element of time. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 87 of file Time.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{d6/d2c/class_time_a5cbba1ef9416cc8466b60e2ef789bd86_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_time_ad100ad8e6e9bc35043881c697f7efef1}{\index{Time@{Time}!Set\-Second\-Element@{Set\-Second\-Element}}
+\index{Set\-Second\-Element@{Set\-Second\-Element}!Time@{Time}}
+\subsubsection[{Set\-Second\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void Time\-::\-Set\-Second\-Element (
+\begin{DoxyParamCaption}
+\item[{int}]{Second\-Element}
+\end{DoxyParamCaption}
+)}}\label{class_time_ad100ad8e6e9bc35043881c697f7efef1}
+
+
+Set the second element of time with specified second. 
+
+Parameter must be a valid Second\-Element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Second\-Element} & The new second element of time. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 91 of file Time.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{d6/d2c/class_time_ad100ad8e6e9bc35043881c697f7efef1_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_time_af7462b6d18ba08745290b681487bed88}{\index{Time@{Time}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Time@{Time}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{output, }
+\item[{const {\bf Time} \&}]{T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_time_af7462b6d18ba08745290b681487bed88}
+
+
+Writes the specified \hyperlink{class_time}{Time} followed by the current line terminator to the standard output stream. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em output} & An instance of class ostream. \\
+\hline
+\mbox{\tt in}  & {\em T} & An instance of class \hyperlink{class_time}{Time}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 86 of file Time.\-h.
+
+\hypertarget{class_time_af8dde22bf0e747b2b3525ff7b8d648f4}{\index{Time@{Time}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Time@{Time}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{input, }
+\item[{{\bf Time} \&}]{T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_time_af8dde22bf0e747b2b3525ff7b8d648f4}
+
+
+Read the specified \hyperlink{class_time}{Time} to the standard input stream. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em input} & An instance of class istream. \\
+\hline
+\mbox{\tt out}  & {\em T} & An instance of class \hyperlink{class_time}{Time}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 98 of file Time.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Time/\hyperlink{_time_8h}{Time.\-h}\item 
+Time/\hyperlink{_time_8cpp}{Time.\-cpp}\end{DoxyCompactItemize}

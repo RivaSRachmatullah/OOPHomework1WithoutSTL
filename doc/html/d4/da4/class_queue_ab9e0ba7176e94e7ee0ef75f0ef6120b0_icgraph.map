@@ -1,0 +1,10 @@
+<map id="Queue::Effective" name="Queue::Effective">
+<area shape="rect" id="node2" href="$d5/df3/m_queue_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="637,81,688,108"/>
+<area shape="rect" id="node3" href="$d4/da4/class_queue.html#a2815639bf7c03ea9ccda9fa30c20f52e" title="Determines whether Queue is full or not. " alt="" coords="191,157,329,184"/>
+<area shape="rect" id="node5" href="$da/d18/class_teller.html#ae5db2a5bde036fa0e0ff27f257cdea27" title="Add element with the value ID to certain Queue. " alt="" coords="410,208,577,235"/>
+<area shape="rect" id="node7" href="$d4/da4/class_queue.html#a298b3523c3f2ddda8dcc29c1aa499b26" title="Delete element on Queue&#39;s Head. " alt="" coords="201,5,319,32"/>
+<area shape="rect" id="node8" href="$d4/da4/class_queue.html#abee14281bbb50742493403315009822e" title="Delete element on Queue&#39;s Tail. " alt="" coords="171,259,349,285"/>
+<area shape="rect" id="node4" href="$d4/da4/class_queue.html#afe902699750ee1aa4600af72c4616957" title="Add element to Queue&#39;s Tail. " alt="" coords="434,107,553,133"/>
+<area shape="rect" id="node6" href="$d6/dea/m_teller_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="637,233,688,260"/>
+<area shape="rect" id="node9" href="$da/d18/class_teller.html#a53829996d557a0bdf9513366461d7986" title="Delete element with the value ID from certain Queue. " alt="" coords="398,259,589,285"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Teller::ArriveofAnElement" name="Teller::ArriveofAnElement">
+<area shape="rect" id="node2" href="$d4/da4/class_queue.html#ab9e0ba7176e94e7ee0ef75f0ef6120b0" title="Gets the number of elements stored on Queue. " alt="" coords="409,22,525,49"/>
+<area shape="rect" id="node3" href="$d4/da4/class_queue.html#abb997d38f5ac3bb506d8d073289affc1" title="Determines whether Queue is empty or not. " alt="" coords="573,48,728,74"/>
+<area shape="rect" id="node4" href="$d4/da4/class_queue.html#a2815639bf7c03ea9ccda9fa30c20f52e" title="Determines whether Queue is full or not. " alt="" coords="222,22,359,49"/>
+</map>

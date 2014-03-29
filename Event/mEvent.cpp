@@ -1,3 +1,8 @@
+/**
+ * @file
+ * @brief Driver Event Class
+ * 
+ */
 #include <iostream>
 #include "Event.h"
 
@@ -14,7 +19,8 @@ int main()
 	Event E(NumberofTeller);
 	E.SetDeadline(Deadline);
 	bool stop = false;
-	do {
+	do
+	{
 		cout << endl << "Input Event : " << endl;
 		cin >> E;
 		if (E.GetDeadline() < E.GetDateTime() || E.GetDeadline() == E.GetDateTime())

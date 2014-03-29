@@ -1,3 +1,8 @@
+/**
+ * @file
+ * @brief Driver Time Class
+ * 
+ */
 #include <iostream>
 #include "Time.h"
 

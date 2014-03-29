@@ -1,0 +1,8 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$dc/d05/m_date_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d" title="Menu" alt="" coords="177,5,231,32"/>
+<area shape="rect" id="node3" href="$de/db5/class_date.html#a94fd42f78253556ad1e585ec473935b6" title="Determines if the specified components of date is a valid date. " alt="" coords="105,56,303,83"/>
+<area shape="rect" id="node5" href="$de/db5/class_date.html#aa5ac806a5d140c3eb60e489f39b6ecdf" title="Set the day component of date with specified day. " alt="" coords="135,107,273,133"/>
+<area shape="rect" id="node6" href="$de/db5/class_date.html#a5c6fd52c67e4f09558fcbd788ed6fa55" title="Set the month component of date with specified month. " alt="" coords="129,157,279,184"/>
+<area shape="rect" id="node7" href="$de/db5/class_date.html#a717961f3e2938f4b7e7523335b899cd6" title="Set the year component of date with specified year. " alt="" coords="133,208,275,235"/>
+<area shape="rect" id="node4" href="$de/db5/class_date.html#ae4cb2474b8a06d777264233188ed2720" title="Determines if the year component of date is Kabisat or not. " alt="" coords="353,56,463,83"/>
+</map>

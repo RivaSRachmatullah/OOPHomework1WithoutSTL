@@ -1,0 +1,11 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$da/d18/class_teller.html#a85b5bfcdab1ad0f595f544bda26dea1e" title="Print all the Queue in Teller. " alt="" coords="156,11,244,38"/>
+<area shape="rect" id="node3" href="$da/d18/class_teller.html#ae5db2a5bde036fa0e0ff27f257cdea27" title="Add element with the value ID to certain Queue. " alt="" coords="117,62,283,88"/>
+<area shape="rect" id="node7" href="$da/d18/class_teller.html#a53829996d557a0bdf9513366461d7986" title="Delete element with the value ID from certain Queue. " alt="" coords="105,138,295,164"/>
+<area shape="rect" id="node10" href="$da/d18/class_teller.html#a22b0dcc673d701ec82f88fa0cf58900a" title="Delete all element from all Queue and Print the element to console. " alt="" coords="571,239,703,266"/>
+<area shape="rect" id="node4" href="$d4/da4/class_queue.html#ab9e0ba7176e94e7ee0ef75f0ef6120b0" title="Gets the number of elements stored on Queue. " alt="" coords="579,62,695,88"/>
+<area shape="rect" id="node5" href="$d4/da4/class_queue.html#abb997d38f5ac3bb506d8d073289affc1" title="Determines whether Queue is empty or not. " alt="" coords="752,112,907,139"/>
+<area shape="rect" id="node6" href="$d4/da4/class_queue.html#a2815639bf7c03ea9ccda9fa30c20f52e" title="Determines whether Queue is full or not. " alt="" coords="365,62,502,88"/>
+<area shape="rect" id="node8" href="$d4/da4/class_queue.html#ac3aa4048853f51c0552d532036b31cd6" title="Gets the content on Queue&#39;s Head address. Queue is empty. " alt="" coords="357,214,510,240"/>
+<area shape="rect" id="node9" href="$d4/da4/class_queue.html#abee14281bbb50742493403315009822e" title="Delete element on Queue&#39;s Tail. " alt="" coords="345,112,522,139"/>
+</map>

@@ -1,0 +1,564 @@
+\hypertarget{class_queue}{\section{Queue Class Reference}
+\label{class_queue}\index{Queue@{Queue}}
+}
+
+
+\hyperlink{class_queue}{Queue} Class.  
+
+
+
+
+{\ttfamily \#include $<$Queue.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_queue_a7cfca3637d57c4a9e37351b3426ffd40}{Queue} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_queue}{Queue} class with 26 block of memory. \end{DoxyCompactList}\item 
+\hyperlink{class_queue_a9477bb38927e458bb211eb99cf89bda4}{Queue} (int Maximum\-Capacityof\-Queue)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_queue}{Queue} class with Maximum\-Elementof\-Queue + 1 block of memory. \end{DoxyCompactList}\item 
+\hyperlink{class_queue_acc9bf68f03677ae4e23dfda08f6ab63a}{Queue} (const \hyperlink{class_queue}{Queue} \&Q)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_queue}{Queue} class with all the content of specified \hyperlink{class_queue}{Queue}. \end{DoxyCompactList}\item 
+\hyperlink{class_queue}{Queue} \& \hyperlink{class_queue_a924ed23e355678aabd5d80551e9d3800}{operator=} (const \hyperlink{class_queue}{Queue} \&Q)
+\begin{DoxyCompactList}\small\item\em Copy all content of specified \hyperlink{class_queue}{Queue} to current \hyperlink{class_queue}{Queue}. \end{DoxyCompactList}\item 
+\hyperlink{class_queue_a00d119db8fa3050da37746e82cbcf94f}{$\sim$\-Queue} ()
+\begin{DoxyCompactList}\small\item\em Clear an instance of \hyperlink{class_queue}{Queue} from memory. \end{DoxyCompactList}\item 
+int \hyperlink{class_queue_a087160b0386fe1fdc7a0217fc40e4c94}{Addressof\-Head} ()
+\begin{DoxyCompactList}\small\item\em Gets the Head address of queue. \end{DoxyCompactList}\item 
+int \hyperlink{class_queue_ae9c7db696b3a50729b339ced74e0887a}{Addressof\-Tail} ()
+\begin{DoxyCompactList}\small\item\em Gets the Tail address of queue. \end{DoxyCompactList}\item 
+int \hyperlink{class_queue_ac3aa4048853f51c0552d532036b31cd6}{Contentof\-Head} ()
+\begin{DoxyCompactList}\small\item\em Gets the content on \hyperlink{class_queue}{Queue}'s Head address. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\-Operation\-Exception} & \hyperlink{class_queue}{Queue} is empty. \\
+\hline
+\end{DoxyExceptions}
+\end{DoxyCompactList}\item 
+int \hyperlink{class_queue_a019423c548927a8830677d1d2fddb38c}{Contentof\-Tail} ()
+\begin{DoxyCompactList}\small\item\em Gets the content on \hyperlink{class_queue}{Queue}'s Tail address. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\-Operation\-Exception} & \hyperlink{class_queue}{Queue} is empty. \\
+\hline
+\end{DoxyExceptions}
+\end{DoxyCompactList}\item 
+int \hyperlink{class_queue_a2b28fe3446577261546f74b7bbe3ccc6}{Size} ()
+\begin{DoxyCompactList}\small\item\em Gets the maximum capacity that can be stored on \hyperlink{class_queue}{Queue}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_queue_abb997d38f5ac3bb506d8d073289affc1}{Is\-Queue\-Empty} ()
+\begin{DoxyCompactList}\small\item\em Determines whether \hyperlink{class_queue}{Queue} is empty or not. \end{DoxyCompactList}\item 
+bool \hyperlink{class_queue_a2815639bf7c03ea9ccda9fa30c20f52e}{Is\-Queue\-Full} ()
+\begin{DoxyCompactList}\small\item\em Determines whether \hyperlink{class_queue}{Queue} is full or not. \end{DoxyCompactList}\item 
+int \hyperlink{class_queue_ab9e0ba7176e94e7ee0ef75f0ef6120b0}{Effective} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of elements stored on \hyperlink{class_queue}{Queue}. \end{DoxyCompactList}\item 
+void \hyperlink{class_queue_afe902699750ee1aa4600af72c4616957}{Enqueue} (int Element)
+\begin{DoxyCompactList}\small\item\em Add element to \hyperlink{class_queue}{Queue}'s Tail. \end{DoxyCompactList}\item 
+int \hyperlink{class_queue_a298b3523c3f2ddda8dcc29c1aa499b26}{Dequeue} ()
+\begin{DoxyCompactList}\small\item\em Delete element on \hyperlink{class_queue}{Queue}'s Head. \end{DoxyCompactList}\item 
+int \hyperlink{class_queue_abee14281bbb50742493403315009822e}{Deletefor\-Jockeying} ()
+\begin{DoxyCompactList}\small\item\em Delete element on \hyperlink{class_queue}{Queue}'s Tail. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_queue_aadecbaa986b78ce2a846e652d7bb57af}{operator$<$$<$} (ostream \&output, const \hyperlink{class_queue}{Queue} \&Q)
+\begin{DoxyCompactList}\small\item\em Writes the specified \hyperlink{class_queue}{Queue} followed by the current line terminator to the standard output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_queue}{Queue} Class. 
+
+Represent a \hyperlink{class_queue}{Queue}
+
+\begin{DoxyAuthor}{Author}
+Riva Syafri Rachmatullah (13512036) for .h file 
+
+Riva Syafri Rachmatullah (13512036) for .cpp file
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\-3 
+\end{DoxyVersion}
+
+
+Definition at line 25 of file Queue.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_queue_a7cfca3637d57c4a9e37351b3426ffd40}{\index{Queue@{Queue}!Queue@{Queue}}
+\index{Queue@{Queue}!Queue@{Queue}}
+\subsubsection[{Queue}]{\setlength{\rightskip}{0pt plus 5cm}Queue\-::\-Queue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_queue_a7cfca3637d57c4a9e37351b3426ffd40}
+
+
+Initializes a new instance of the \hyperlink{class_queue}{Queue} class with 26 block of memory. 
+
+
+
+Definition at line 9 of file Queue.\-cpp.
+
+\hypertarget{class_queue_a9477bb38927e458bb211eb99cf89bda4}{\index{Queue@{Queue}!Queue@{Queue}}
+\index{Queue@{Queue}!Queue@{Queue}}
+\subsubsection[{Queue}]{\setlength{\rightskip}{0pt plus 5cm}Queue\-::\-Queue (
+\begin{DoxyParamCaption}
+\item[{int}]{Maximum\-Capacityof\-Queue}
+\end{DoxyParamCaption}
+)}}\label{class_queue_a9477bb38927e458bb211eb99cf89bda4}
+
+
+Initializes a new instance of the \hyperlink{class_queue}{Queue} class with Maximum\-Elementof\-Queue + 1 block of memory. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Maximum\-Capacityof\-Queue} & Maximum number of element stored on \hyperlink{class_queue}{Queue}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file Queue.\-cpp.
+
+\hypertarget{class_queue_acc9bf68f03677ae4e23dfda08f6ab63a}{\index{Queue@{Queue}!Queue@{Queue}}
+\index{Queue@{Queue}!Queue@{Queue}}
+\subsubsection[{Queue}]{\setlength{\rightskip}{0pt plus 5cm}Queue\-::\-Queue (
+\begin{DoxyParamCaption}
+\item[{const {\bf Queue} \&}]{Q}
+\end{DoxyParamCaption}
+)}}\label{class_queue_acc9bf68f03677ae4e23dfda08f6ab63a}
+
+
+Initializes a new instance of the \hyperlink{class_queue}{Queue} class with all the content of specified \hyperlink{class_queue}{Queue}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Q} & The object \hyperlink{class_queue}{Queue} that will be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file Queue.\-cpp.
+
+\hypertarget{class_queue_a00d119db8fa3050da37746e82cbcf94f}{\index{Queue@{Queue}!$\sim$\-Queue@{$\sim$\-Queue}}
+\index{$\sim$\-Queue@{$\sim$\-Queue}!Queue@{Queue}}
+\subsubsection[{$\sim$\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}Queue\-::$\sim$\-Queue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_queue_a00d119db8fa3050da37746e82cbcf94f}
+
+
+Clear an instance of \hyperlink{class_queue}{Queue} from memory. 
+
+
+
+Definition at line 73 of file Queue.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_queue_a087160b0386fe1fdc7a0217fc40e4c94}{\index{Queue@{Queue}!Addressof\-Head@{Addressof\-Head}}
+\index{Addressof\-Head@{Addressof\-Head}!Queue@{Queue}}
+\subsubsection[{Addressof\-Head}]{\setlength{\rightskip}{0pt plus 5cm}int Queue\-::\-Addressof\-Head (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_queue_a087160b0386fe1fdc7a0217fc40e4c94}
+
+
+Gets the Head address of queue. 
+
+\begin{DoxyReturn}{Returns}
+The Head address of queue. 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file Queue.\-cpp.
+
+\hypertarget{class_queue_ae9c7db696b3a50729b339ced74e0887a}{\index{Queue@{Queue}!Addressof\-Tail@{Addressof\-Tail}}
+\index{Addressof\-Tail@{Addressof\-Tail}!Queue@{Queue}}
+\subsubsection[{Addressof\-Tail}]{\setlength{\rightskip}{0pt plus 5cm}int Queue\-::\-Addressof\-Tail (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_queue_ae9c7db696b3a50729b339ced74e0887a}
+
+
+Gets the Tail address of queue. 
+
+\begin{DoxyReturn}{Returns}
+The Tail address of queue. 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file Queue.\-cpp.
+
+\hypertarget{class_queue_ac3aa4048853f51c0552d532036b31cd6}{\index{Queue@{Queue}!Contentof\-Head@{Contentof\-Head}}
+\index{Contentof\-Head@{Contentof\-Head}!Queue@{Queue}}
+\subsubsection[{Contentof\-Head}]{\setlength{\rightskip}{0pt plus 5cm}int Queue\-::\-Contentof\-Head (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_queue_ac3aa4048853f51c0552d532036b31cd6}
+
+
+Gets the content on \hyperlink{class_queue}{Queue}'s Head address. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\-Operation\-Exception} & \hyperlink{class_queue}{Queue} is empty. \\
+\hline
+\end{DoxyExceptions}
+
+
+\begin{DoxyReturn}{Returns}
+The value of \hyperlink{class_queue}{Queue}'s Head address. 
+\end{DoxyReturn}
+
+
+Definition at line 88 of file Queue.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/da4/class_queue_ac3aa4048853f51c0552d532036b31cd6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_queue_a019423c548927a8830677d1d2fddb38c}{\index{Queue@{Queue}!Contentof\-Tail@{Contentof\-Tail}}
+\index{Contentof\-Tail@{Contentof\-Tail}!Queue@{Queue}}
+\subsubsection[{Contentof\-Tail}]{\setlength{\rightskip}{0pt plus 5cm}int Queue\-::\-Contentof\-Tail (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_queue_a019423c548927a8830677d1d2fddb38c}
+
+
+Gets the content on \hyperlink{class_queue}{Queue}'s Tail address. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\-Operation\-Exception} & \hyperlink{class_queue}{Queue} is empty. \\
+\hline
+\end{DoxyExceptions}
+
+
+\begin{DoxyReturn}{Returns}
+The value of \hyperlink{class_queue}{Queue}'s Tail address. 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file Queue.\-cpp.
+
+\hypertarget{class_queue_abee14281bbb50742493403315009822e}{\index{Queue@{Queue}!Deletefor\-Jockeying@{Deletefor\-Jockeying}}
+\index{Deletefor\-Jockeying@{Deletefor\-Jockeying}!Queue@{Queue}}
+\subsubsection[{Deletefor\-Jockeying}]{\setlength{\rightskip}{0pt plus 5cm}int Queue\-::\-Deletefor\-Jockeying (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_queue_abee14281bbb50742493403315009822e}
+
+
+Delete element on \hyperlink{class_queue}{Queue}'s Tail. 
+
+\begin{DoxyReturn}{Returns}
+Element on \hyperlink{class_queue}{Queue}'s Tail. 
+\end{DoxyReturn}
+
+
+Definition at line 169 of file Queue.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/da4/class_queue_abee14281bbb50742493403315009822e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/da4/class_queue_abee14281bbb50742493403315009822e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_queue_a298b3523c3f2ddda8dcc29c1aa499b26}{\index{Queue@{Queue}!Dequeue@{Dequeue}}
+\index{Dequeue@{Dequeue}!Queue@{Queue}}
+\subsubsection[{Dequeue}]{\setlength{\rightskip}{0pt plus 5cm}int Queue\-::\-Dequeue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_queue_a298b3523c3f2ddda8dcc29c1aa499b26}
+
+
+Delete element on \hyperlink{class_queue}{Queue}'s Head. 
+
+\begin{DoxyReturn}{Returns}
+0 if \hyperlink{class_queue}{Queue} is empty; otherwise element on \hyperlink{class_queue}{Queue}'s Head. 
+\end{DoxyReturn}
+
+
+Definition at line 147 of file Queue.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/da4/class_queue_a298b3523c3f2ddda8dcc29c1aa499b26_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{d4/da4/class_queue_a298b3523c3f2ddda8dcc29c1aa499b26_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_queue_ab9e0ba7176e94e7ee0ef75f0ef6120b0}{\index{Queue@{Queue}!Effective@{Effective}}
+\index{Effective@{Effective}!Queue@{Queue}}
+\subsubsection[{Effective}]{\setlength{\rightskip}{0pt plus 5cm}int Queue\-::\-Effective (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_queue_ab9e0ba7176e94e7ee0ef75f0ef6120b0}
+
+
+Gets the number of elements stored on \hyperlink{class_queue}{Queue}. 
+
+\begin{DoxyReturn}{Returns}
+The number of elements stored. 
+\end{DoxyReturn}
+
+
+Definition at line 111 of file Queue.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{d4/da4/class_queue_ab9e0ba7176e94e7ee0ef75f0ef6120b0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/da4/class_queue_ab9e0ba7176e94e7ee0ef75f0ef6120b0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_queue_afe902699750ee1aa4600af72c4616957}{\index{Queue@{Queue}!Enqueue@{Enqueue}}
+\index{Enqueue@{Enqueue}!Queue@{Queue}}
+\subsubsection[{Enqueue}]{\setlength{\rightskip}{0pt plus 5cm}void Queue\-::\-Enqueue (
+\begin{DoxyParamCaption}
+\item[{int}]{Element}
+\end{DoxyParamCaption}
+)}}\label{class_queue_afe902699750ee1aa4600af72c4616957}
+
+
+Add element to \hyperlink{class_queue}{Queue}'s Tail. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Element} & Element to input. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file Queue.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/da4/class_queue_afe902699750ee1aa4600af72c4616957_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{d4/da4/class_queue_afe902699750ee1aa4600af72c4616957_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_queue_abb997d38f5ac3bb506d8d073289affc1}{\index{Queue@{Queue}!Is\-Queue\-Empty@{Is\-Queue\-Empty}}
+\index{Is\-Queue\-Empty@{Is\-Queue\-Empty}!Queue@{Queue}}
+\subsubsection[{Is\-Queue\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Queue\-::\-Is\-Queue\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_queue_abb997d38f5ac3bb506d8d073289affc1}
+
+
+Determines whether \hyperlink{class_queue}{Queue} is empty or not. 
+
+\hyperlink{class_queue}{Queue} is empty if Head and Tail are 0. \begin{DoxyReturn}{Returns}
+true if \hyperlink{class_queue}{Queue} is empty; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 101 of file Queue.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/da4/class_queue_abb997d38f5ac3bb506d8d073289affc1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_queue_a2815639bf7c03ea9ccda9fa30c20f52e}{\index{Queue@{Queue}!Is\-Queue\-Full@{Is\-Queue\-Full}}
+\index{Is\-Queue\-Full@{Is\-Queue\-Full}!Queue@{Queue}}
+\subsubsection[{Is\-Queue\-Full}]{\setlength{\rightskip}{0pt plus 5cm}bool Queue\-::\-Is\-Queue\-Full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_queue_a2815639bf7c03ea9ccda9fa30c20f52e}
+
+
+Determines whether \hyperlink{class_queue}{Queue} is full or not. 
+
+\hyperlink{class_queue}{Queue} is full if Count() equals to the Maximum\-Capacityof\-Queue. \begin{DoxyReturn}{Returns}
+true if \hyperlink{class_queue}{Queue} is full; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 106 of file Queue.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/da4/class_queue_a2815639bf7c03ea9ccda9fa30c20f52e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/da4/class_queue_a2815639bf7c03ea9ccda9fa30c20f52e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_queue_a924ed23e355678aabd5d80551e9d3800}{\index{Queue@{Queue}!operator=@{operator=}}
+\index{operator=@{operator=}!Queue@{Queue}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Queue} \& Queue\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Queue} \&}]{Q}
+\end{DoxyParamCaption}
+)}}\label{class_queue_a924ed23e355678aabd5d80551e9d3800}
+
+
+Copy all content of specified \hyperlink{class_queue}{Queue} to current \hyperlink{class_queue}{Queue}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Q} & The object \hyperlink{class_queue}{Queue} that will be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file Queue.\-cpp.
+
+\hypertarget{class_queue_a2b28fe3446577261546f74b7bbe3ccc6}{\index{Queue@{Queue}!Size@{Size}}
+\index{Size@{Size}!Queue@{Queue}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}int Queue\-::\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_queue_a2b28fe3446577261546f74b7bbe3ccc6}
+
+
+Gets the maximum capacity that can be stored on \hyperlink{class_queue}{Queue}. 
+
+\begin{DoxyReturn}{Returns}
+The maximum capacity of \hyperlink{class_queue}{Queue}. 
+\end{DoxyReturn}
+
+
+Definition at line 97 of file Queue.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{d4/da4/class_queue_a2b28fe3446577261546f74b7bbe3ccc6_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_queue_aadecbaa986b78ce2a846e652d7bb57af}{\index{Queue@{Queue}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Queue@{Queue}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{output, }
+\item[{const {\bf Queue} \&}]{Q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_queue_aadecbaa986b78ce2a846e652d7bb57af}
+
+
+Writes the specified \hyperlink{class_queue}{Queue} followed by the current line terminator to the standard output stream. 
+
+\hyperlink{class_queue}{Queue} will be printed \{x1,x2,x3,...,xn\}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em output} & An instance of class ostream. \\
+\hline
+\mbox{\tt in}  & {\em Q} & An instance of class \hyperlink{class_queue}{Queue}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file Queue.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Queue/\hyperlink{_queue_8h}{Queue.\-h}\item 
+Queue/\hyperlink{_queue_8cpp}{Queue.\-cpp}\end{DoxyCompactItemize}

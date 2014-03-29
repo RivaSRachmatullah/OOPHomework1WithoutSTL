@@ -1,3 +1,8 @@
+/**
+ * @file
+ * @brief Implementation Time Class
+ * 
+ */
 #include "Time.h"
 
 Time::Time()

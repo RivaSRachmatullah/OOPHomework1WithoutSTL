@@ -1,3 +1,8 @@
+/**
+ * @file
+ * @brief Implementation Teller Class
+ * 
+ */
 #include <cmath>
 #include "Teller.h"
 

@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a087160b0386fe1fdc7a0217fc40e4c94"><param name="Name" value="AddressofHead"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#ae9c7db696b3a50729b339ced74e0887a"><param name="Name" value="AddressofTail"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html#ae5db2a5bde036fa0e0ff27f257cdea27"><param name="Name" value="ArriveofAnElement"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html#acc0755128d9534def434679355004e79"><param name="Name" value="Close"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#ac3aa4048853f51c0552d532036b31cd6"><param name="Name" value="ContentofHead"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a019423c548927a8830677d1d2fddb38c"><param name="Name" value="ContentofTail"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html"><param name="Name" value="Date"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a4e59ed4ba66eec61c27460c5d09fa1bd"><param name="Name" value="Date"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a3015dcbb857b2182a59177f3a277b3eb"><param name="Name" value="GetDayofDate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#ae9828bcfdd9e4bd18b8b356069249f31"><param name="Name" value="GetMonthofDate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a1194e01502a0267cb0494ee8a7a1b649"><param name="Name" value="GetYearofDate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a94fd42f78253556ad1e585ec473935b6"><param name="Name" value="IsComponentofDateValid"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#ae4cb2474b8a06d777264233188ed2720"><param name="Name" value="IsKabisat"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#ae6e05500234df3028aace397f68b0929"><param name="Name" value="operator!="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#afb88829e04e94bbedb058aacfe6c9ab7"><param name="Name" value="operator<"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a9559c1c3841bdae17b284844a756d4bd"><param name="Name" value="operator<<"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#adfb778e1afee2312a53597275e669ad6"><param name="Name" value="operator=="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a6e4731c11f54e00166edeb97b7e54037"><param name="Name" value="operator>"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a8576024c4c197a313e26cd753347db6c"><param name="Name" value="operator>>"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#aa5ac806a5d140c3eb60e489f39b6ecdf"><param name="Name" value="SetDayofDate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a5c6fd52c67e4f09558fcbd788ed6fa55"><param name="Name" value="SetMonthofDate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a717961f3e2938f4b7e7523335b899cd6"><param name="Name" value="SetYearofDate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#ade4b469433b7966cc034cbcc6799233b"><param name="Name" value="~Date"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html"><param name="Name" value="DateTime"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a3ccfb87f7a2e9683b91964e32d907161"><param name="Name" value="DateTime"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a4c206227fdf530b862f4df46ee0da5b7"><param name="Name" value="GetDate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#ab0b5363b639394082b8464107b96ef9c"><param name="Name" value="GetTime"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a6478a78407126774d91a631dedea5e84"><param name="Name" value="operator!="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a08f9db72e1d0f49916fe6686218402e8"><param name="Name" value="operator<"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#aaffa9ef1d2a2e41e2e2765dbcbfdcdae"><param name="Name" value="operator<<"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a61752bfcf9bfe5e2e9d493ac42fe3ee8"><param name="Name" value="operator=="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a0ebaa48c3c3c55751f3201c29379664e"><param name="Name" value="operator>"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a2a7b5a6ce0f12397e2fc83060106cfbd"><param name="Name" value="operator>>"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#af59006af64ac325b50d5d8c1dc6057b6"><param name="Name" value="SetDate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a59940dc8f5f4f7d938e2bdbe3b68eba2"><param name="Name" value="SetTime"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a5c46d6432c6df5d550603b529e825dc5"><param name="Name" value="~DateTime"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#abee14281bbb50742493403315009822e"><param name="Name" value="DeleteforJockeying"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html#a22b0dcc673d701ec82f88fa0cf58900a"><param name="Name" value="DepartureAll"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html#a53829996d557a0bdf9513366461d7986"><param name="Name" value="DepartureofAnElement"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a298b3523c3f2ddda8dcc29c1aa499b26"><param name="Name" value="Dequeue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#ab9e0ba7176e94e7ee0ef75f0ef6120b0"><param name="Name" value="Effective"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#afe902699750ee1aa4600af72c4616957"><param name="Name" value="Enqueue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html"><param name="Name" value="Event"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html#acc0755128d9534def434679355004e79"><param name="Name" value="Close"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html#a5a40dd4708297f7031e29b39e039ae10"><param name="Name" value="Event"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html#ab828b0511da4f76c3090c88d8c9bbe2c"><param name="Name" value="GetDateTime"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html#aeaea78f235bea3fc083f1a070c7e821a"><param name="Name" value="GetDeadline"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html#aefab4a45e8de8a212980527a504d6061"><param name="Name" value="operator>>"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html#a70a345abe7ed4136058524ffdf3d3d53"><param name="Name" value="SetDeadline"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html#a7704ec01ce91e673885792054214b3d2"><param name="Name" value="~Event"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a4c206227fdf530b862f4df46ee0da5b7"><param name="Name" value="GetDate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html#ab828b0511da4f76c3090c88d8c9bbe2c"><param name="Name" value="GetDateTime"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a3015dcbb857b2182a59177f3a277b3eb"><param name="Name" value="GetDayofDate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html#aeaea78f235bea3fc083f1a070c7e821a"><param name="Name" value="GetDeadline"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a48e43f8a54d938d4ffbf6443c73b4ffd"><param name="Name" value="GetHourElement"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a1aa88252331ef2e9f91a3ffe82e3d378"><param name="Name" value="GetMinuteElement"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#ae9828bcfdd9e4bd18b8b356069249f31"><param name="Name" value="GetMonthofDate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a998ba1fdc211afdc48bae6b74412f609"><param name="Name" value="GetSecondElement"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#ab0b5363b639394082b8464107b96ef9c"><param name="Name" value="GetTime"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a1194e01502a0267cb0494ee8a7a1b649"><param name="Name" value="GetYearofDate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a94fd42f78253556ad1e585ec473935b6"><param name="Name" value="IsComponentofDateValid"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a73518dd61e22a29dded0c808a746e6be"><param name="Name" value="IsElementofTimeValid"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#ae4cb2474b8a06d777264233188ed2720"><param name="Name" value="IsKabisat"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#abb997d38f5ac3bb506d8d073289affc1"><param name="Name" value="IsQueueEmpty"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a2815639bf7c03ea9ccda9fa30c20f52e"><param name="Name" value="IsQueueFull"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d0a/main_8cpp.html"><param name="Name" value="main.cpp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="main"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="main.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/d05/m_date_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="mDate.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/d1f/m_date_time_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="mDateTime.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d2/dd2/m_event_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="mEvent.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/df3/m_queue_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="mQueue.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/dea/m_teller_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="mTeller.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/db2/m_time_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="mTime.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/d05/m_date_8cpp.html"><param name="Name" value="mDate.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/d05/m_date_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/d05/m_date_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d"><param name="Name" value="Menu"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/d1f/m_date_time_8cpp.html"><param name="Name" value="mDateTime.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/d1f/m_date_time_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/d1f/m_date_time_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d"><param name="Name" value="Menu"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/d05/m_date_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d"><param name="Name" value="Menu"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/d05/m_date_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d"><param name="Name" value="mDate.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="dc/d1f/m_date_time_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d"><param name="Name" value="mDateTime.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/df3/m_queue_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d"><param name="Name" value="mQueue.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/db2/m_time_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d"><param name="Name" value="mTime.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d2/dd2/m_event_8cpp.html"><param name="Name" value="mEvent.cpp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/df3/m_queue_8cpp.html"><param name="Name" value="mQueue.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/df3/m_queue_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d5/df3/m_queue_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d"><param name="Name" value="Menu"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/dea/m_teller_8cpp.html"><param name="Name" value="mTeller.cpp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/db2/m_time_8cpp.html"><param name="Name" value="mTime.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/db2/m_time_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/db2/m_time_8cpp.html#afdf1ca9e7afc3e7ec41b47fea4b3d80d"><param name="Name" value="Menu"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#ae6e05500234df3028aace397f68b0929"><param name="Name" value="operator!="></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#ae6e05500234df3028aace397f68b0929"><param name="Name" value="Date"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a6478a78407126774d91a631dedea5e84"><param name="Name" value="DateTime"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#aa582792aedd7600a67245f574650dcb5"><param name="Name" value="Time"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a9559c1c3841bdae17b284844a756d4bd"><param name="Name" value="operator<<"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a9559c1c3841bdae17b284844a756d4bd"><param name="Name" value="Date"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#aaffa9ef1d2a2e41e2e2765dbcbfdcdae"><param name="Name" value="DateTime"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#aadecbaa986b78ce2a846e652d7bb57af"><param name="Name" value="Queue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#af7462b6d18ba08745290b681487bed88"><param name="Name" value="Time"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#afb88829e04e94bbedb058aacfe6c9ab7"><param name="Name" value="operator<"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#afb88829e04e94bbedb058aacfe6c9ab7"><param name="Name" value="Date"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a08f9db72e1d0f49916fe6686218402e8"><param name="Name" value="DateTime"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a2105a3d96442b30c78de1c39cfe78a43"><param name="Name" value="Time"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#adfb778e1afee2312a53597275e669ad6"><param name="Name" value="operator=="></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#adfb778e1afee2312a53597275e669ad6"><param name="Name" value="Date"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a61752bfcf9bfe5e2e9d493ac42fe3ee8"><param name="Name" value="DateTime"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a0e5c32707d684d728e2b2f4f33748cf0"><param name="Name" value="Time"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a924ed23e355678aabd5d80551e9d3800"><param name="Name" value="operator="></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a924ed23e355678aabd5d80551e9d3800"><param name="Name" value="Queue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html#a8409f8ad1eb830534ad9d23d0ebacc57"><param name="Name" value="Teller"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a8576024c4c197a313e26cd753347db6c"><param name="Name" value="operator>>"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a8576024c4c197a313e26cd753347db6c"><param name="Name" value="Date"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a2a7b5a6ce0f12397e2fc83060106cfbd"><param name="Name" value="DateTime"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html#aefab4a45e8de8a212980527a504d6061"><param name="Name" value="Event"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#af8dde22bf0e747b2b3525ff7b8d648f4"><param name="Name" value="Time"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a6e4731c11f54e00166edeb97b7e54037"><param name="Name" value="operator>"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a6e4731c11f54e00166edeb97b7e54037"><param name="Name" value="Date"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a0ebaa48c3c3c55751f3201c29379664e"><param name="Name" value="DateTime"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a5685f6f63cfad7d5e87aaac121bdc455"><param name="Name" value="Time"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html#a85b5bfcdab1ad0f595f544bda26dea1e"><param name="Name" value="Print"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html"><param name="Name" value="Queue"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a087160b0386fe1fdc7a0217fc40e4c94"><param name="Name" value="AddressofHead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#ae9c7db696b3a50729b339ced74e0887a"><param name="Name" value="AddressofTail"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#ac3aa4048853f51c0552d532036b31cd6"><param name="Name" value="ContentofHead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a019423c548927a8830677d1d2fddb38c"><param name="Name" value="ContentofTail"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#abee14281bbb50742493403315009822e"><param name="Name" value="DeleteforJockeying"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a298b3523c3f2ddda8dcc29c1aa499b26"><param name="Name" value="Dequeue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#ab9e0ba7176e94e7ee0ef75f0ef6120b0"><param name="Name" value="Effective"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#afe902699750ee1aa4600af72c4616957"><param name="Name" value="Enqueue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#abb997d38f5ac3bb506d8d073289affc1"><param name="Name" value="IsQueueEmpty"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a2815639bf7c03ea9ccda9fa30c20f52e"><param name="Name" value="IsQueueFull"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#aadecbaa986b78ce2a846e652d7bb57af"><param name="Name" value="operator<<"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a924ed23e355678aabd5d80551e9d3800"><param name="Name" value="operator="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a7cfca3637d57c4a9e37351b3426ffd40"><param name="Name" value="Queue"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a2b28fe3446577261546f74b7bbe3ccc6"><param name="Name" value="Size"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a00d119db8fa3050da37746e82cbcf94f"><param name="Name" value="~Queue"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#af59006af64ac325b50d5d8c1dc6057b6"><param name="Name" value="SetDate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#aa5ac806a5d140c3eb60e489f39b6ecdf"><param name="Name" value="SetDayofDate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html#a70a345abe7ed4136058524ffdf3d3d53"><param name="Name" value="SetDeadline"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a97e5d72787a0b47c786349df031b44e8"><param name="Name" value="SetHourElement"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a5cbba1ef9416cc8466b60e2ef789bd86"><param name="Name" value="SetMinuteElement"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a5c6fd52c67e4f09558fcbd788ed6fa55"><param name="Name" value="SetMonthofDate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#ad100ad8e6e9bc35043881c697f7efef1"><param name="Name" value="SetSecondElement"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a59940dc8f5f4f7d938e2bdbe3b68eba2"><param name="Name" value="SetTime"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#a717961f3e2938f4b7e7523335b899cd6"><param name="Name" value="SetYearofDate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a2b28fe3446577261546f74b7bbe3ccc6"><param name="Name" value="Size"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html"><param name="Name" value="Teller"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html#ae5db2a5bde036fa0e0ff27f257cdea27"><param name="Name" value="ArriveofAnElement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html#a22b0dcc673d701ec82f88fa0cf58900a"><param name="Name" value="DepartureAll"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html#a53829996d557a0bdf9513366461d7986"><param name="Name" value="DepartureofAnElement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html#a8409f8ad1eb830534ad9d23d0ebacc57"><param name="Name" value="operator="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html#a85b5bfcdab1ad0f595f544bda26dea1e"><param name="Name" value="Print"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html#a652e56e65d8d73a53d709b8299e1c4a7"><param name="Name" value="Teller"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html#af61263c98d7ff236ca84ec551919d7e7"><param name="Name" value="~Teller"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html"><param name="Name" value="Time"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a48e43f8a54d938d4ffbf6443c73b4ffd"><param name="Name" value="GetHourElement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a1aa88252331ef2e9f91a3ffe82e3d378"><param name="Name" value="GetMinuteElement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a998ba1fdc211afdc48bae6b74412f609"><param name="Name" value="GetSecondElement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a73518dd61e22a29dded0c808a746e6be"><param name="Name" value="IsElementofTimeValid"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#aa582792aedd7600a67245f574650dcb5"><param name="Name" value="operator!="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a2105a3d96442b30c78de1c39cfe78a43"><param name="Name" value="operator<"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#af7462b6d18ba08745290b681487bed88"><param name="Name" value="operator<<"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a0e5c32707d684d728e2b2f4f33748cf0"><param name="Name" value="operator=="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a5685f6f63cfad7d5e87aaac121bdc455"><param name="Name" value="operator>"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#af8dde22bf0e747b2b3525ff7b8d648f4"><param name="Name" value="operator>>"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a97e5d72787a0b47c786349df031b44e8"><param name="Name" value="SetHourElement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a5cbba1ef9416cc8466b60e2ef789bd86"><param name="Name" value="SetMinuteElement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#ad100ad8e6e9bc35043881c697f7efef1"><param name="Name" value="SetSecondElement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a4245e409c7347d1d671858962c2ca3b5"><param name="Name" value="Time"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a1e92dbe963fa3cdd6bea207680f5f6d1"><param name="Name" value="~Time"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="de/db5/class_date.html#ade4b469433b7966cc034cbcc6799233b"><param name="Name" value="~Date"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d7/d85/class_date_time.html#a5c46d6432c6df5d550603b529e825dc5"><param name="Name" value="~DateTime"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d1/da9/class_event.html#a7704ec01ce91e673885792054214b3d2"><param name="Name" value="~Event"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d4/da4/class_queue.html#a00d119db8fa3050da37746e82cbcf94f"><param name="Name" value="~Queue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="da/d18/class_teller.html#af61263c98d7ff236ca84ec551919d7e7"><param name="Name" value="~Teller"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="d6/d2c/class_time.html#a1e92dbe963fa3cdd6bea207680f5f6d1"><param name="Name" value="~Time"></OBJECT>
+</UL>
+</BODY>
+</HTML>

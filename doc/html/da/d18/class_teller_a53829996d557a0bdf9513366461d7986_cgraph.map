@@ -1,0 +1,6 @@
+<map id="Teller::DepartureofAnElement" name="Teller::DepartureofAnElement">
+<area shape="rect" id="node2" href="$d4/da4/class_queue.html#ac3aa4048853f51c0552d532036b31cd6" title="Gets the content on Queue&#39;s Head address. Queue is empty. " alt="" coords="258,5,411,32"/>
+<area shape="rect" id="node3" href="$d4/da4/class_queue.html#abee14281bbb50742493403315009822e" title="Delete element on Queue&#39;s Tail. " alt="" coords="246,56,423,83"/>
+<area shape="rect" id="node4" href="$d4/da4/class_queue.html#abb997d38f5ac3bb506d8d073289affc1" title="Determines whether Queue is empty or not. " alt="" coords="637,56,792,83"/>
+<area shape="rect" id="node5" href="$d4/da4/class_queue.html#ab9e0ba7176e94e7ee0ef75f0ef6120b0" title="Gets the number of elements stored on Queue. " alt="" coords="473,56,589,83"/>
+</map>

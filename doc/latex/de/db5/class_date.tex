@@ -1,0 +1,519 @@
+\hypertarget{class_date}{\section{Date Class Reference}
+\label{class_date}\index{Date@{Date}}
+}
+
+
+\hyperlink{class_date}{Date} Class.  
+
+
+
+
+{\ttfamily \#include $<$Date.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_date}{Date} class. \end{DoxyCompactList}\item 
+\hyperlink{class_date_aae885dc98ddd667b560ded3c8ae65ccb}{Date} (const \hyperlink{class_date}{Date} \&D)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_date}{Date} class from specified \hyperlink{class_date}{Date}. \end{DoxyCompactList}\item 
+\hyperlink{class_date_ade4b469433b7966cc034cbcc6799233b}{$\sim$\-Date} ()
+\begin{DoxyCompactList}\small\item\em Clear an instance of \hyperlink{class_date}{Date} from memory. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_adfb778e1afee2312a53597275e669ad6}{operator==} (const \hyperlink{class_date}{Date} \&D)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object \hyperlink{class_date}{Date} is equal to the current object \hyperlink{class_date}{Date}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_ae6e05500234df3028aace397f68b0929}{operator!=} (const \hyperlink{class_date}{Date} \&D)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object \hyperlink{class_date}{Date} is not equal to the current object \hyperlink{class_date}{Date}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_afb88829e04e94bbedb058aacfe6c9ab7}{operator$<$} (const \hyperlink{class_date}{Date} \&D)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object \hyperlink{class_date}{Date} is earlier than the current object \hyperlink{class_date}{Date}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_a6e4731c11f54e00166edeb97b7e54037}{operator$>$} (const \hyperlink{class_date}{Date} \&D)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object \hyperlink{class_date}{Date} is later than the current object \hyperlink{class_date}{Date}. \end{DoxyCompactList}\item 
+int \hyperlink{class_date_a3015dcbb857b2182a59177f3a277b3eb}{Get\-Dayof\-Date} ()
+\begin{DoxyCompactList}\small\item\em Gets the day of specified date. \end{DoxyCompactList}\item 
+int \hyperlink{class_date_ae9828bcfdd9e4bd18b8b356069249f31}{Get\-Monthof\-Date} ()
+\begin{DoxyCompactList}\small\item\em Gets the month of specified date. \end{DoxyCompactList}\item 
+int \hyperlink{class_date_a1194e01502a0267cb0494ee8a7a1b649}{Get\-Yearof\-Date} ()
+\begin{DoxyCompactList}\small\item\em Gets the year of specified date. \end{DoxyCompactList}\item 
+void \hyperlink{class_date_aa5ac806a5d140c3eb60e489f39b6ecdf}{Set\-Dayof\-Date} (int Day\-Component)
+\begin{DoxyCompactList}\small\item\em Set the day component of date with specified day. \end{DoxyCompactList}\item 
+void \hyperlink{class_date_a5c6fd52c67e4f09558fcbd788ed6fa55}{Set\-Monthof\-Date} (int Month\-Component)
+\begin{DoxyCompactList}\small\item\em Set the month component of date with specified month. \end{DoxyCompactList}\item 
+void \hyperlink{class_date_a717961f3e2938f4b7e7523335b899cd6}{Set\-Yearof\-Date} (int Year\-Component)
+\begin{DoxyCompactList}\small\item\em Set the year component of date with specified year. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_date_a94fd42f78253556ad1e585ec473935b6}{Is\-Componentof\-Date\-Valid} (int Day\-Component, int Month\-Component, int Year\-Component)
+\begin{DoxyCompactList}\small\item\em Determines if the specified components of date is a valid date. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_date_ae4cb2474b8a06d777264233188ed2720}{Is\-Kabisat} (const int \&Year\-Component)
+\begin{DoxyCompactList}\small\item\em Determines if the year component of date is Kabisat or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \hyperlink{class_date_a8576024c4c197a313e26cd753347db6c}{operator$>$$>$} (istream \&input, \hyperlink{class_date}{Date} \&D)
+\begin{DoxyCompactList}\small\item\em Read the specified \hyperlink{class_date}{Date} to the standard input stream. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{class_date_a9559c1c3841bdae17b284844a756d4bd}{operator$<$$<$} (ostream \&output, const \hyperlink{class_date}{Date} \&D)
+\begin{DoxyCompactList}\small\item\em Writes the specified \hyperlink{class_date}{Date} followed by the current line terminator to the standard output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_date}{Date} Class. 
+
+Represent a \hyperlink{class_date}{Date}
+
+\begin{DoxyAuthor}{Author}
+Riva Syafri Rachmatullah (13512036) for .h file 
+
+Indam Muhammad (13512026) and Riva Syafri Rachmatullah (13512036) for .cpp file
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\-3 
+\end{DoxyVersion}
+
+
+Definition at line 25 of file Date.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\subsubsection[{Date}]{\setlength{\rightskip}{0pt plus 5cm}Date\-::\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}
+
+
+Initializes a new instance of the \hyperlink{class_date}{Date} class. 
+
+
+
+Definition at line 8 of file Date.\-cpp.
+
+\hypertarget{class_date_aae885dc98ddd667b560ded3c8ae65ccb}{\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\subsubsection[{Date}]{\setlength{\rightskip}{0pt plus 5cm}Date\-::\-Date (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{D}
+\end{DoxyParamCaption}
+)}}\label{class_date_aae885dc98ddd667b560ded3c8ae65ccb}
+
+
+Initializes a new instance of the \hyperlink{class_date}{Date} class from specified \hyperlink{class_date}{Date}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D} & The object \hyperlink{class_date}{Date} that will be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 15 of file Date.\-cpp.
+
+\hypertarget{class_date_ade4b469433b7966cc034cbcc6799233b}{\index{Date@{Date}!$\sim$\-Date@{$\sim$\-Date}}
+\index{$\sim$\-Date@{$\sim$\-Date}!Date@{Date}}
+\subsubsection[{$\sim$\-Date}]{\setlength{\rightskip}{0pt plus 5cm}Date\-::$\sim$\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_ade4b469433b7966cc034cbcc6799233b}
+
+
+Clear an instance of \hyperlink{class_date}{Date} from memory. 
+
+
+
+Definition at line 22 of file Date.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_date_a3015dcbb857b2182a59177f3a277b3eb}{\index{Date@{Date}!Get\-Dayof\-Date@{Get\-Dayof\-Date}}
+\index{Get\-Dayof\-Date@{Get\-Dayof\-Date}!Date@{Date}}
+\subsubsection[{Get\-Dayof\-Date}]{\setlength{\rightskip}{0pt plus 5cm}int Date\-::\-Get\-Dayof\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_a3015dcbb857b2182a59177f3a277b3eb}
+
+
+Gets the day of specified date. 
+
+\begin{DoxyReturn}{Returns}
+The day component of date. 
+\end{DoxyReturn}
+
+
+Definition at line 110 of file Date.\-cpp.
+
+\hypertarget{class_date_ae9828bcfdd9e4bd18b8b356069249f31}{\index{Date@{Date}!Get\-Monthof\-Date@{Get\-Monthof\-Date}}
+\index{Get\-Monthof\-Date@{Get\-Monthof\-Date}!Date@{Date}}
+\subsubsection[{Get\-Monthof\-Date}]{\setlength{\rightskip}{0pt plus 5cm}int Date\-::\-Get\-Monthof\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_ae9828bcfdd9e4bd18b8b356069249f31}
+
+
+Gets the month of specified date. 
+
+\begin{DoxyReturn}{Returns}
+The month component of date. 
+\end{DoxyReturn}
+
+
+Definition at line 115 of file Date.\-cpp.
+
+\hypertarget{class_date_a1194e01502a0267cb0494ee8a7a1b649}{\index{Date@{Date}!Get\-Yearof\-Date@{Get\-Yearof\-Date}}
+\index{Get\-Yearof\-Date@{Get\-Yearof\-Date}!Date@{Date}}
+\subsubsection[{Get\-Yearof\-Date}]{\setlength{\rightskip}{0pt plus 5cm}int Date\-::\-Get\-Yearof\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_a1194e01502a0267cb0494ee8a7a1b649}
+
+
+Gets the year of specified date. 
+
+\begin{DoxyReturn}{Returns}
+The year component of date. 
+\end{DoxyReturn}
+
+
+Definition at line 120 of file Date.\-cpp.
+
+\hypertarget{class_date_a94fd42f78253556ad1e585ec473935b6}{\index{Date@{Date}!Is\-Componentof\-Date\-Valid@{Is\-Componentof\-Date\-Valid}}
+\index{Is\-Componentof\-Date\-Valid@{Is\-Componentof\-Date\-Valid}!Date@{Date}}
+\subsubsection[{Is\-Componentof\-Date\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\-::\-Is\-Componentof\-Date\-Valid (
+\begin{DoxyParamCaption}
+\item[{int}]{Day\-Component, }
+\item[{int}]{Month\-Component, }
+\item[{int}]{Year\-Component}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_date_a94fd42f78253556ad1e585ec473935b6}
+
+
+Determines if the specified components of date is a valid date. 
+
+Components of \hyperlink{class_date}{Date} will be valid if Day\-Component is within Maximum Day in certain Month, Month\-Component is within 1 to 12, and Year\-Component is greater than 0.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Day\-Component} & The day component of date. \\
+\hline
+\mbox{\tt in}  & {\em Month\-Component} & The month component of date. \\
+\hline
+\mbox{\tt in}  & {\em Year\-Component} & The year component of date. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if all components of \hyperlink{class_date}{Date} is valid. 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file Date.\-cpp.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db5/class_date_a94fd42f78253556ad1e585ec473935b6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{de/db5/class_date_a94fd42f78253556ad1e585ec473935b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_date_ae4cb2474b8a06d777264233188ed2720}{\index{Date@{Date}!Is\-Kabisat@{Is\-Kabisat}}
+\index{Is\-Kabisat@{Is\-Kabisat}!Date@{Date}}
+\subsubsection[{Is\-Kabisat}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\-::\-Is\-Kabisat (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{Year\-Component}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_date_ae4cb2474b8a06d777264233188ed2720}
+
+
+Determines if the year component of date is Kabisat or not. 
+
+Year is Kabisat if Year can be divided by 4 but can't be divided by 100 or can be divided by 400
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Year\-Component} & The year component of date. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if Year\-Component is kabisat; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file Date.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db5/class_date_ae4cb2474b8a06d777264233188ed2720_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_date_ae6e05500234df3028aace397f68b0929}{\index{Date@{Date}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Date@{Date}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{D}
+\end{DoxyParamCaption}
+)}}\label{class_date_ae6e05500234df3028aace397f68b0929}
+
+
+Determines whether the specified object \hyperlink{class_date}{Date} is not equal to the current object \hyperlink{class_date}{Date}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D} & The object \hyperlink{class_date}{Date} to compare with the current object \hyperlink{class_date}{Date}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified \hyperlink{class_date}{Date} is not equal to the current \hyperlink{class_date}{Date}; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file Date.\-cpp.
+
+\hypertarget{class_date_afb88829e04e94bbedb058aacfe6c9ab7}{\index{Date@{Date}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Date@{Date}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{D}
+\end{DoxyParamCaption}
+)}}\label{class_date_afb88829e04e94bbedb058aacfe6c9ab7}
+
+
+Determines whether the specified object \hyperlink{class_date}{Date} is earlier than the current object \hyperlink{class_date}{Date}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D} & The object \hyperlink{class_date}{Date} to compare with the current object \hyperlink{class_date}{Date}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified \hyperlink{class_date}{Date} is earlier to the current \hyperlink{class_date}{Date}; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file Date.\-cpp.
+
+\hypertarget{class_date_adfb778e1afee2312a53597275e669ad6}{\index{Date@{Date}!operator==@{operator==}}
+\index{operator==@{operator==}!Date@{Date}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{D}
+\end{DoxyParamCaption}
+)}}\label{class_date_adfb778e1afee2312a53597275e669ad6}
+
+
+Determines whether the specified object \hyperlink{class_date}{Date} is equal to the current object \hyperlink{class_date}{Date}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D} & The object \hyperlink{class_date}{Date} to compare with the current object \hyperlink{class_date}{Date}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified \hyperlink{class_date}{Date} is equal to the current \hyperlink{class_date}{Date}; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file Date.\-cpp.
+
+\hypertarget{class_date_a6e4731c11f54e00166edeb97b7e54037}{\index{Date@{Date}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Date@{Date}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool Date\-::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date} \&}]{D}
+\end{DoxyParamCaption}
+)}}\label{class_date_a6e4731c11f54e00166edeb97b7e54037}
+
+
+Determines whether the specified object \hyperlink{class_date}{Date} is later than the current object \hyperlink{class_date}{Date}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em D} & The object \hyperlink{class_date}{Date} to compare with the current object \hyperlink{class_date}{Date}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified \hyperlink{class_date}{Date} is later to the current \hyperlink{class_date}{Date}; otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line 51 of file Date.\-cpp.
+
+\hypertarget{class_date_aa5ac806a5d140c3eb60e489f39b6ecdf}{\index{Date@{Date}!Set\-Dayof\-Date@{Set\-Dayof\-Date}}
+\index{Set\-Dayof\-Date@{Set\-Dayof\-Date}!Date@{Date}}
+\subsubsection[{Set\-Dayof\-Date}]{\setlength{\rightskip}{0pt plus 5cm}void Date\-::\-Set\-Dayof\-Date (
+\begin{DoxyParamCaption}
+\item[{int}]{Day\-Component}
+\end{DoxyParamCaption}
+)}}\label{class_date_aa5ac806a5d140c3eb60e489f39b6ecdf}
+
+
+Set the day component of date with specified day. 
+
+Parameter must be a valid Day\-Component
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Day\-Component} & The new day component of date. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 125 of file Date.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{de/db5/class_date_aa5ac806a5d140c3eb60e489f39b6ecdf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_date_a5c6fd52c67e4f09558fcbd788ed6fa55}{\index{Date@{Date}!Set\-Monthof\-Date@{Set\-Monthof\-Date}}
+\index{Set\-Monthof\-Date@{Set\-Monthof\-Date}!Date@{Date}}
+\subsubsection[{Set\-Monthof\-Date}]{\setlength{\rightskip}{0pt plus 5cm}void Date\-::\-Set\-Monthof\-Date (
+\begin{DoxyParamCaption}
+\item[{int}]{Month\-Component}
+\end{DoxyParamCaption}
+)}}\label{class_date_a5c6fd52c67e4f09558fcbd788ed6fa55}
+
+
+Set the month component of date with specified month. 
+
+Parameter must be a valid Month\-Component
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Month\-Component} & The new month component of date. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 130 of file Date.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{de/db5/class_date_a5c6fd52c67e4f09558fcbd788ed6fa55_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_date_a717961f3e2938f4b7e7523335b899cd6}{\index{Date@{Date}!Set\-Yearof\-Date@{Set\-Yearof\-Date}}
+\index{Set\-Yearof\-Date@{Set\-Yearof\-Date}!Date@{Date}}
+\subsubsection[{Set\-Yearof\-Date}]{\setlength{\rightskip}{0pt plus 5cm}void Date\-::\-Set\-Yearof\-Date (
+\begin{DoxyParamCaption}
+\item[{int}]{Year\-Component}
+\end{DoxyParamCaption}
+)}}\label{class_date_a717961f3e2938f4b7e7523335b899cd6}
+
+
+Set the year component of date with specified year. 
+
+Parameter must be a valid Year\-Component
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Year\-Component} & The new year component of date. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 135 of file Date.\-cpp.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{de/db5/class_date_a717961f3e2938f4b7e7523335b899cd6_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_date_a9559c1c3841bdae17b284844a756d4bd}{\index{Date@{Date}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Date@{Date}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{output, }
+\item[{const {\bf Date} \&}]{D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_date_a9559c1c3841bdae17b284844a756d4bd}
+
+
+Writes the specified \hyperlink{class_date}{Date} followed by the current line terminator to the standard output stream. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em output} & An instance of class ostream. \\
+\hline
+\mbox{\tt in}  & {\em D} & An instance of class \hyperlink{class_date}{Date}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 108 of file Date.\-h.
+
+\hypertarget{class_date_a8576024c4c197a313e26cd753347db6c}{\index{Date@{Date}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Date@{Date}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{input, }
+\item[{{\bf Date} \&}]{D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_date_a8576024c4c197a313e26cd753347db6c}
+
+
+Read the specified \hyperlink{class_date}{Date} to the standard input stream. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em input} & An instance of class istream. \\
+\hline
+\mbox{\tt out}  & {\em D} & An instance of class \hyperlink{class_date}{Date}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 86 of file Date.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Date/\hyperlink{_date_8h}{Date.\-h}\item 
+Date/\hyperlink{_date_8cpp}{Date.\-cpp}\end{DoxyCompactItemize}
