@@ -10,7 +10,7 @@ T(i) statusnya 0: menganggur/idle atau 1: sedang melayani<br>
 
 Program utama akan memroses sederetan “event” yang diberikan sebagai input, dan dipastikan eventnya terurut waktu dan membesar (mencerminkan kejadian sesuai dengan berjalannya waktu). Jika ada event yang waktunya bersamaan, anda harus memroses sesuai urutan input. Sebuah event adalah type yang terdiri dari tiga komponen yaitu <T: DateTime; Kode:char; i:integer> yang dijelaskan sebagai berikut : <br>
 <ol>
-	<li>T adalah type DateTime, dengan Date dan TIme yang harus dibuat sendiri, dengan method yang hanya diperlukan untuk persoalan. Format Input DateTime : DD-MM-YYYY;HH:MM:SS</li>
+	<li>T adalah type DateTime, dengan Date dan Time yang harus dibuat sendiri, dengan method yang hanya diperlukan untuk persoalan. Format Input DateTime : DD-MM-YYYY;HH:MM:SS</li>
 	<li>Kode adalah sebuah karakter yang bernilai ‘A’ atau ‘D’. A = Arrival (kedatangan pelanggan) dan D = Departure, seorang pelanggan selesai dilayani sehingga harus dihapus dari Queue.</li>
 	<li>i adalah nomor ID pelanggan (di-generate secara otomatis oleh program anda terurut mulai dari 1 pada saat Arrival).</li>
 </ol>
