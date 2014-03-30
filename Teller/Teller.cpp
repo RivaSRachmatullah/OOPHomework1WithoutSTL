@@ -140,7 +140,7 @@ void Teller::Print()
 	for (int i = 0; i < NumberofTeller; i++)
 	{
 		if (TellerServingStatus[i])
-			cout << "Teller[" << i << "] = " << T[i];
+			cout << "T[" << i << "] = " << T[i];
 	}
 }
 
@@ -149,10 +149,9 @@ int Teller::Jockeying(int iOrigin)
 	int Minimum = 0;
 	for (int i = 1; i < NumberofTeller; i++)
 	{
-		if (T[Minimum].Effective() > T[i].Effective())
-			Minimum = i;
-		else if (T[Minimum].Effective() == T[i].Effective() &&
-				abs(Minimum-iOrigin) > abs(i-iOrigin))
+		if ((T[Minimum].Effective() > T[i].Effective()) ||
+			(T[Minimum].Effective() == T[i].Effective() &&
+			abs(Minimum-iOrigin) > abs(i-iOrigin)))
 			Minimum = i;
 	}
 	if (T[iOrigin].Effective() > T[Minimum].Effective() + 2)

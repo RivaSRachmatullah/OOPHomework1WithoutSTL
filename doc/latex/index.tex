@@ -1,4 +1,4 @@
-This homework is using C++ for Programming Language. It has classes for representing \hyperlink{class_date}{Date} and \hyperlink{class_time}{Time} and both of them. It also has class \hyperlink{class_queue}{Queue} and \hyperlink{class_teller}{Teller} for representing Banks'\hyperlink{class_queue}{Queue}. Class \hyperlink{class_event}{Event} is a controlling class for user's input. There is a main file that use all of them named \hyperlink{main_8cpp}{main.\-cpp}.
+This homework is using C++ for Programming Language and without S\-T\-L. It has classes for representing \hyperlink{class_date}{Date} and \hyperlink{class_time}{Time} and both of them. It also has class \hyperlink{class_queue}{Queue} and \hyperlink{class_teller}{Teller} for representing Banks'\hyperlink{class_queue}{Queue}. Class \hyperlink{class_event}{Event} is a controlling class for user's input. There is a main file that use all of them named \hyperlink{main_8cpp}{main.\-cpp}.
 
 {\bfseries Problem Description \-:}\par
  Pada sebuah bank, ada N teller, di depan masing-\/masing teller ada antrian. Ada N buah teller dinomori T(0) s.\-d T(N-\/1). Q(i) adalah antrian di depan teller T(i).\par
@@ -10,7 +10,7 @@ T(i) statusnya 0\-: menganggur/idle atau 1\-: sedang melayani\par
 Program utama akan memroses sederetan “event” yang diberikan sebagai input, dan dipastikan eventnya terurut waktu dan membesar (mencerminkan kejadian sesuai dengan berjalannya waktu). Jika ada event yang waktunya bersamaan, anda harus memroses sesuai urutan input. Sebuah event adalah type yang terdiri dari tiga komponen yaitu $<$T\-: \hyperlink{class_date_time}{Date\-Time}; Kode\-:char; i\-:integer$>$ yang dijelaskan sebagai berikut \-: \par
  
 \begin{DoxyEnumerate}
-\item T adalah type \hyperlink{class_date_time}{Date\-Time}, dengan \hyperlink{class_date}{Date} dan T\-Ime yang harus dibuat sendiri, dengan method yang hanya diperlukan untuk persoalan. Format Input \hyperlink{class_date_time}{Date\-Time} \-: D\-D-\/\-M\-M-\/\-Y\-Y\-Y\-Y;H\-H\-:\-M\-M\-:S\-S 
+\item T adalah type \hyperlink{class_date_time}{Date\-Time}, dengan \hyperlink{class_date}{Date} dan \hyperlink{class_time}{Time} yang harus dibuat sendiri, dengan method yang hanya diperlukan untuk persoalan. Format Input \hyperlink{class_date_time}{Date\-Time} \-: D\-D-\/\-M\-M-\/\-Y\-Y\-Y\-Y;H\-H\-:\-M\-M\-:S\-S 
 \item Kode adalah sebuah karakter yang bernilai ‘\-A’ atau ‘\-D’. A = Arrival (kedatangan pelanggan) dan D = Departure, seorang pelanggan selesai dilayani sehingga harus dihapus dari \hyperlink{class_queue}{Queue}. 
 \item i adalah nomor I\-D pelanggan (di-\/generate secara otomatis oleh program anda terurut mulai dari 1 pada saat Arrival). 
 \end{DoxyEnumerate}
