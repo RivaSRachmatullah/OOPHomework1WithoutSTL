@@ -16,23 +16,8 @@ MAIN=mEvent
 compile-test: $(MAIN).cpp $(ADT).o $(ADT1).o $(ADT2).o $(ADT3).o $(ADT4).o $(ADT5).o
 	g++ -o $(MAIN) $(MAIN).cpp $(ADT).o $(ADT1).o $(ADT2).o $(ADT3).o $(ADT4).o $(ADT5).o
 
-$(ADT1).o: $(ADT).cpp $(ADT).h $(ADT1).o $(ADT2).o $(ADT3).o $(ADT4).o $(ADT5).o
+$(ADT).o: $(ADT).cpp $(ADT).h $(ADT1).o $(ADT2).o $(ADT3).o $(ADT4).o $(ADT5).o
 	g++ -c $(ADT).cpp $(ADT1).o $(ADT2).o $(ADT3).o $(ADT4).o $(ADT5).o
-
-$(ADT1).o: $(ADT1).cpp $(ADT1).h
-	g++ -c $(ADT1).cpp
-
-$(ADT2).o: $(ADT2).cpp $(ADT2).h
-	g++ -c $(ADT2).cpp
-
-$(ADT3).o: $(ADT3).cpp $(ADT3).h $(ADT1).o $(ADT2).o
-	g++ -c $(ADT3).cpp $(ADT1).o $(ADT2).o
-
-$(ADT4).o: $(ADT4).cpp $(ADT4).h
-	g++ -c $(ADT4).cpp
-
-$(ADT5).o: $(ADT5).cpp $(ADT5).h $(ADT4).o
-	g++ -c $(ADT5).cpp $(ADT4).o
 
 grade:
 	./$(MAIN)
